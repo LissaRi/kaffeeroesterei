@@ -1,0 +1,17 @@
+.button_dunkel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 50px;
+
+    position: absolute;
+    width: 163px;
+    height: 48px;
+    left: 638px;
+    top: 543px;
+
+    background: #1A1A1A;
+    border: 2px solid #1A1A1A;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
