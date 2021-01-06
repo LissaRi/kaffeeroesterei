@@ -1,7 +1,20 @@
 @import "variables";
 @import "base";
 @import "components/hero";
+@import "components/header_Startseite";
+@import "components/header_subpage";
+@import "components/footer";
 
-:root {
-  --div-color: red;
+.header_Startseite,
+.header_subpage {
+  position: relative;
+}
+
+.header_logo_box {
+  position: absolute;
+
+.header_logo {
+    width: 35px;
+    height: 35px;
+  }
 }

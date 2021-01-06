@@ -69,3 +69,11 @@ main {
     }
   }
 }
+
+h1 {
+  font-size: $font-size-h1-mobil;
+
+  @media (min-width: $media-medium) {
+    font-size: $font-size-h1-mobil;
+  }
+}
