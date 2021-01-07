@@ -1,0 +1,46 @@
+.footer {
+    background-color: $color-black;
+
+    
+
+    &__box_text1 {
+    
+    }
+
+    &__box_text2 {
+        
+    }
+
+    &__box_text3 {
+        
+    }
+
+    &__box_text4 {
+
+    }
+
+    &__logo {
+
+    }
+
+    &__logo_box {
+        width: 35px;
+    height: 35px;
+    position: fixed;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+
+    }
+
+}

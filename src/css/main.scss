@@ -1,20 +1,15 @@
-@import "variables";
-@import "base";
-@import "components/hero";
-@import "components/header_Startseite";
-@import "components/header_subpage";
-@import "components/footer";
+@import "base/base";
 
-.header_Startseite,
-.header_subpage {
-  position: relative;
-}
+@import "components/boxes";
+@import "components/buttons";
 
-.header_logo_box {
-  position: absolute;
+@import "layout/footer";
+@import "layout/header";
 
-.header_logo {
-    width: 35px;
-    height: 35px;
-  }
-}
+@import "pages/home";
+@import "pages/subpage";
+
+@import "variables/variables";
+
+
+

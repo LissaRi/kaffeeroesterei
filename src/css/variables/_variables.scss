@@ -1,0 +1,36 @@
+//colors
+
+$color-white: rgba(255,255,255,1);
+$color-anthrazit: rgba(26,26,26,1);
+$color-kraftpapier: rgba(215,190,157,1);
+$color-petrol: rgba(0,109,126,1);
+$color-rosa: rgba(237,209,201,1);
+$color-orange: rgba(215,124,18,1);
+$color-medium-grey: rgba(115,115,115,1);
+$color-light-grey: rgba(233,233,233,1);
+$color-black: rgba(0,0,0,1);
+
+// Font-Styling
+
+$Font-weight-900: 900 black;
+$Font-weight-400: 400 Regular;
+
+// Fontsizes
+
+$font-size-h1: 9,6rem;
+$font-size-h2: 4,8rem;
+$font-size-h3: 4,2rem;
+$font-size-bodytext: 1,8rem;
+$font-size-h1-mobil: 6,4rem;
+$font-size-h2-mobil: 3,6rem;
+$font-size-h3-mobil: 3,2rem;
+$font-size-subhead-mobil: 1,8rem;
+$font-size-bodytext-mobil: 1,4rem;
+
+//media queries
+
+$media-small: 576px;
+$media-medium: 768px;
+$media-large: 992px;
+$media-xl: 1200px;
+$media-xxl: 1920px;
