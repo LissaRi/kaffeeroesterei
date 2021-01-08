@@ -1,26 +1,47 @@
+@import "abstracts/variables";
 
 .box_rösterei {
+    display: inline-flex;
     background-color: $color-white;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.img_coffee_shop {
+   width: 241px;
+   height: 182px;
+
+}
+
+.img_coffee_plant {
+    width: 241px;
+    height: 160px;
+
 }
 
 .box_bio {
+    display: inline-flex;
     background-color: $color-white;
 }
 
 .box_shop {
+    display: inline-flex;
     background-color: $color-black;
 }
 
 .Herkunft {
-    background-image: url(../../images/FEND-Coffee-bags-2.jpg),
-    linear-gradient(0deg, rgba(0, 0, 0, 0,5), rgba(0, 0, 0, 0,5));
+    background-image: url(/images/FEND-Coffee-bags-2.jpg),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     width: 100%;
     height: 50vh;
     text-align: center;
 }
 
 .box_Herkunft {
+    display: flex;
     background-color: $color-white;
+
+    }
 
 .map {
     width: 100%;

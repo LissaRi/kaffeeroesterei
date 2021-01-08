@@ -27,10 +27,16 @@ $font-size-h3-mobil: 3,2rem;
 $font-size-subhead-mobil: 1,8rem;
 $font-size-bodytext-mobil: 1,4rem;
 
-//media queries
 
-$media-small: 576px;
-$media-medium: 768px;
-$media-large: 992px;
-$media-xl: 1200px;
-$media-xxl: 1920px;
+.box_h2 {
+    text-align: center;
+}
+
+.h1_Rustica {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: $font-size-h1-mobil;
+}

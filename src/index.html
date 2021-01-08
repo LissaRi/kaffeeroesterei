@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.scss" />
   </head>
 
   <body>
@@ -22,7 +23,7 @@
           </ul>
       </nav>
 
-      <div>
+      <div class="h1_Rustica">
         <h1>Rustica</h1>
         <span class="Subhead_m">Bio und fair seit 1991</span>
       </div>
@@ -33,10 +34,6 @@
     </header>
 
     <main>
-
-      <a href="./my-subpage/index.html"></a>
-      <include src="header.html"></include>
-
       <div class="box_rösterei">
         <div>
           <h2>Rösterei & Café</h2>
@@ -46,19 +43,19 @@
         </div>
 
         <div>
-          <img src="./images/FEND-Coffee-shop.jpg" alt="Blick in ein Café im Industrial Style. Ein großer Raum, Backsteinwände, große Fenster und Lampen. Leute sitzen an Tischen und trinken Kaffee oder durchqueren den Raum. Die Stimmung wirkt gemütlich.">
+          <img class="img_coffee_shop" src="./images/FEND-Coffee-shop.jpg" alt="Blick in ein Café im Industrial Style. Ein großer Raum, Backsteinwände, große Fenster und Lampen. Leute sitzen an Tischen und trinken Kaffee oder durchqueren den Raum. Die Stimmung wirkt gemütlich.">
         </div>
       </div>
 
       <div class="box_bio">
         <div>
+          <img class="img_coffee_plant" src="./images/FEND-coffee-plant.jpg" alt="Ansicht auf einen Zweig mit noch grünen Kaffeekirschen im Reifungsprozess">
+        </div>
+        
+        <div>
           <h3>Bio & Fair</h3>
           <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio-Qualität</p>
           <a href="#" class="button_white">mehr</a>
-        </div>
-
-        <div>
-          <img src="./images/FEND-coffee-plant.jpg" alt="Ansicht auf einen Zweig mit noch grünen Kaffeekirschen im Reifungsprozess">
         </div>
       </div>
 
@@ -70,30 +67,32 @@
       <div class="Herkunft">
         <h3>Herkunft</h3>
         <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität.</p>
+        <a href="#">mehr</a>
       </div>
 
-      <div class="box_Herkunft">
-        <h2>Das steckt drin</h2>
-        <div class="box_Herkunft_costa-rica">
-          <img src="images/FEND_Coffee_Costa-Rica 2.jpg" alt="Abbildung einer 250-Gramm-Packung Kaffee aus Costa Rica">
-        </div>
+        <div class="box_Herkunft">
+          <h2 class="box_h2">Das steckt drin</h2>
+          <div class="box_Herkunft_costa-rica">
+            <img src="images/FEND_Coffee_Costa-Rica 2.jpg" alt="Abbildung einer 250-Gramm-Packung Kaffee aus Costa Rica">
+          </div>
         
-        <div class="box_Herkunft_icons">
-          <div class="box_Herkunft_icons_tasse">
-            <img src="" alt="">
-            <p>Bester Geschmack</p>
+        
+          <div class="box_Herkunft_icons">
+            <div class="box_Herkunft_icons_tasse">
+              <img src="images/Icon Kaffee Tasse.svg" alt="Icon einer Kaffeetasse">
+              <p>Bester Geschmack</p>
+            </div>
+            <div class="box_Herkunft_icons_schaufel">
+              <img src="images/Icon Kaffee Schaufel.svg" alt="Icon einer Kaffeeschaufel mit Kaffeebohnen">
+              <p>Fair gehandelt</p>
+            </div>
+            <div class="box_Herkunft_icons_pflanze">
+              <img src="images/Icon-Kaffee Pflanze.svg" alt="Icon eines Kaffeekirschenzweigs">
+              <p>Bio Qualität</p>
+            </div>
           </div>
-          <div class="box_Herkunft_icons_schaufel">
-            <img src="" alt="">
-            <p>Fair gehandelt</p>
-          </div>
-          <div class="box_Herkunft_icons_pflanze">
-            <img src="" alt="">
-            <p>Bio Qualität</p>
-          </div>
+            <a class="button_dunkel" href="#">Zum Shop</a>
         </div>
-        <a class="button_dunkel" href="#">Zum Shop</a>
-      </div>
 
       <div class="map">
         <h2>Komm vorbei</h2>
@@ -101,7 +100,7 @@
       </div>
 
     </main>
-    <script src="js/index.js"></script>
+    
 
     <footer class="footer">
 
@@ -115,13 +114,14 @@
       </div>
 
       <div class="footer_text_box2">
-        <p>Komm uns besuchen! <br>Frauenhoferstr.13, Kiel <br><br>Mo - Fr 8-18 Uhr <br>Sa 11-18 Uhr</p>
+        <span>Komm uns besuchen! <br>Frauenhoferstr.13, Kiel</span>
+        <span>Mo - Fr 8-18 Uhr <br>Sa 11-18 Uhr</span>
       </div>
       
 
       <div class="footer_box_text3">
       <ul class="footer_list">
-        <li class="footer_item"><a class="footer_link" href="#"Café></a></li>
+        <li class="footer_item"><a class="footer_link" href="my-subpage/index.html">Café</a></li>
         <li class="footer_item"><a class="footer_link" href="#">Shop</a></li>
         <li class="footer_item"><a class="footer_link" href="#">Herkunft</a></li>
       </ul>
@@ -135,7 +135,8 @@
       </div>
 
     </footer>
-
+    
+  <script src="js/index.js"></script>
   </body>
 
 </html>

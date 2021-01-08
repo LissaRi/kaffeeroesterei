@@ -6,6 +6,28 @@
 
 html {
   font-size: 62.5%; // 1rem=10px
+
+  @include respond(media-small) {
+    font-size: 1,4em;
+  }
+
+  @include respond(media-medium) {
+    font-size: 1.4rem;
+  }
+
+  @include respond(media-large) {
+    font-size: 1,8rem;
+  }
+
+  @include respond(media-xl) {
+    font-size:1,8rem;
+  }
+
+  @include respond(media-xxl) {
+    font-size: 1,8rem;
+  }
+
+
 }
 
 body {

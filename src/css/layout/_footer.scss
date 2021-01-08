@@ -1,46 +1,52 @@
+@import "abstracts/variables";
+
 .footer {
+    display: flex;
     background-color: $color-black;
+    width: auto;
+    height: 370px;
 
-    
-
-    &__box_text1 {
-    
+    &_box_text1 {
+        color: white;
     }
 
-    &__box_text2 {
+    &_box_text2 {
         
     }
 
-    &__box_text3 {
+    &_box_text3 {
         
     }
 
-    &__box_text4 {
+    &_box_text4 {
 
     }
 
-    &__logo {
+    &_logo {
 
     }
 
-    &__logo_box {
+    &_logo_box {
         width: 35px;
-    height: 35px;
-    position: fixed;
+        height: 35px;
+        position: fixed;
     }
 
-    &__list {
+    &_list {
         list-style: none;
+        
     }
 
-    &__item {
+    &_item {
 
     }
 
-    &__link {
+    &_link {
         color: $color-white;
         text-decoration: none;
 
     }
 
 }
+
+

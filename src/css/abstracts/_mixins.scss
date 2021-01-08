@@ -1,0 +1,30 @@
+/*
+$media-small: 576px;
+$media-medium: 768px;
+$media-large: 992px;
+$media-xl: 1200px;
+$media-xxl: 1920px;
+*/
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == media-small {
+        @media (min-width: 36em) { @content };
+    }
+
+    @if $breakpoint == media-medium {
+        @media (min-width: 48em) { @content };
+    }
+
+    @if $breakpoint == media-large {
+        @media (min-width: 62em) { @content };
+    }
+    
+    @if $breakpoint == media-xl {
+        @media (min-width: 75em) { @content };
+    }
+    
+    @if $breakpoint == media-medium-xxl {
+        @media (min-width: 120em) { @content };
+    }    
+}
