@@ -1,7 +1,10 @@
 @import "abstracts/variables";
 
 .footer {
+    padding: 61px 24px 51px 22px;
     display: flex;
+    //flex-direction: column;
+    justify-content: space-between;
     background-color: $color-black;
     width: auto;
     height: 370px;
@@ -11,15 +14,21 @@
     }
 
     &_box_text2 {
-        
+        color: white;
+    
+    }
+
+    &_box_opened {
+        color: white;
     }
 
     &_box_text3 {
+      
         
     }
 
     &_box_text4 {
-
+       
     }
 
     &_logo {
@@ -29,7 +38,7 @@
     &_logo_box {
         width: 35px;
         height: 35px;
-        position: fixed;
+        
     }
 
     &_list {
@@ -46,7 +55,6 @@
         text-decoration: none;
 
     }
-
 }
 
 

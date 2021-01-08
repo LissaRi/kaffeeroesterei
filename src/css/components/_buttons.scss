@@ -1,17 +1,21 @@
 .button_dunkel {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 15px 50px;
+    margin-top: 83%;
 
-    position: absolute;
     width: 163px;
     height: 48px;
-    left: 638px;
-    top: 543px;
+
 
     background: #1A1A1A;
     border: 2px solid #1A1A1A;
     box-sizing: border-box;
     border-radius: 5px;
+
+    color: $color-white;
+    font-size: $font-size-bodytext-mobil;
+    font-weight: $Font-weight-400;
+    text-decoration: none;
 }

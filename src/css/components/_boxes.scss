@@ -1,10 +1,10 @@
-@import "abstracts/variables";
-
 .box_rösterei {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 60px 24px 40px 24px;
     background-color: $color-white;
-    flex: 1;
-    justify-content: space-evenly;
+    
 }
 
 .img_coffee_shop {
@@ -21,6 +21,9 @@
 
 .box_bio {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px 24px 60px 24px;
     background-color: $color-white;
 }
 
