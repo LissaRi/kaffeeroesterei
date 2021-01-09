@@ -1,10 +1,16 @@
 .button_dunkel {
     display: flex;
+    position: absolute;
     flex-direction: column;
-    align-items: flex-end;
+    align-self: flex-end;
     padding: 15px 45px;
     justify-content: center;
     margin-top: 83%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+   
+    transform: translate(-50%, -38.5%);
+    text-align: center;
 
     width: 163px;
     height: 48px;
