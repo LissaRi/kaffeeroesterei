@@ -1,16 +1,39 @@
 .box_rösterei {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    
     margin: 60px 24px 40px 24px;
     background-color: $color-white;
+
+    .container1 {
+        margin-bottom: 20px;
+    }
+
+    .container2 {
+       margin-bottom: 20px;
+    }
+
+    .container3 {
+      margin-bottom: 20px;
+      margin-right: 17px;
+
+    }
+
+    .container4 {
+       margin-bottom: 20px;
+        
+    }
+
+    .container5 {
+      
+    }
     
 }
 
 .img_coffee_shop {
-   width: 241px;
-   height: 182px;
-
+    width: 241px;
+    height: 182px;
+    
 }
 
 .img_coffee_plant {
@@ -28,38 +51,49 @@
 }
 
 .box_shop {
-    display: inline-flex;
     background-color: $color-black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 24px;
+    
 
     h2 {
-        font-size: $font-size-h2-mobil;
-        font-weight: $Font-weight-900;
-        color: $color-white;
+       color: $color-white;
     }
     
 }
 
-.shop_coffee_variety {
+    .shop_coffee_variety {
+        list-style-type: none;
+        margin-right: 8px;
 
-    &_package {
-        font-size: $font-size-subhead-mobil;
-        font-weight: $Font-weight-400;
-        color: $color-white;
+        &_Costa_Rica {
+            width: 155px;
+            height: 208px;
+        }
+
+        &_package {
+            font-size: $font-size-subhead-mobil;
+            font-weight: $Font-weight-400;
+            color: $color-white;
         
+        }
+
+        &_price { 
+            font-size: $font-size-bodytext-mobil;
+            font-weight: $Font-weight-400;
+            color: $color-medium-grey;
+
+        
+        }
+
+        &_icons {
+            width: 12px;
+            height: 14px;
+        }
+
     }
 
-    &_price {
-        font-size: $font-size-bodytext-mobil;
-        font-weight: $Font-weight-400;
-        color: $color-medium-grey;
-
-    &_icons {
-        width: 12px;
-        height: 14px;
-    }
-
-    }
-}
 
 .Herkunft {
     background-image: url(/images/FEND-Coffee-bags-2.jpg),
@@ -76,17 +110,7 @@
         padding: 137px, 66px, 127px, 68px;
     }
 
-    & h3 {
-        font-size: $font-size-h3-mobil;
-        font-weight: $Font-weight-900;
-    }
 
-    & p {
-        font-size: $font-size-bodytext-mobil;
-        font-weight: $Font-weight-400;
-        line-height: 1.8rem;
-
-    }
 
     & a {
         text-decoration: none;

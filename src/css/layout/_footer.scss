@@ -3,27 +3,28 @@
 .footer {
     padding: 61px 24px 51px 22px;
     display: flex;
-    //flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: $color-black;
     width: auto;
     height: 370px;
 
     &_box_text1 {
-        color: white;
+        color: $color-white;
+        flex-grow: 10;
     }
 
     &_box_text2 {
-        color: white;
+        color: $color-white;
     
     }
 
     &_box_opened {
-        color: white;
+        color: $color-white;
     }
 
     &_box_text3 {
-      
+       
         
     }
 
@@ -53,6 +54,9 @@
     &_link {
         color: $color-white;
         text-decoration: none;
+        font-size: $font-size-bodytext-mobil;
+        font-weight: $Font-weight-400;
+        line-height: 1.8rem;
 
     }
 }
