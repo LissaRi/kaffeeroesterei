@@ -26,3 +26,50 @@
     font-weight: $Font-weight-400;
     text-decoration: none;
 }
+
+.button_dunkel2 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 15px 45px;
+    justify-content: center;
+  
+    text-align: center;
+
+    width: 163px;
+    height: 48px;
+
+
+    background: #1A1A1A;
+    border: 2px solid #1A1A1A;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    color: $color-white;
+    font-size: $font-size-bodytext-mobil;
+    font-weight: $Font-weight-400;
+    text-decoration: none;
+}
+
+.button_hell {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 15px 45px;
+
+    position: absolute;
+    width: 182px;
+    height: 48px;
+    transform: translate(50%, 38.5%);
+
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    color: $color-white;
+    font-size: $font-size-bodytext-mobil;
+    font-weight: $Font-weight-400;
+    text-decoration: none;
+    text-align: center;
+}
