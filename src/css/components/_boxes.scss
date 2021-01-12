@@ -25,7 +25,7 @@
     }
 
     .container5 {
-      
+     
     }
     
 }
@@ -33,7 +33,8 @@
 .img_coffee_shop {
     width: 241px;
     height: 182px;
-    
+    margin-left: 33%;
+    margin-top: 20px;
 }
 
 .img_coffee_plant {
@@ -81,11 +82,13 @@
        margin-bottom: 40px;
     }
     
-}
+    .shop_btn {
+        
+    }
 
     .shop_coffee_variety {
 
-        margin-right: 8px;
+        margin-right: 8px;        
 
         &_Costa_Rica {
             width: 155px;
@@ -115,8 +118,10 @@
             list-style-type: none;
         }
 
-    }
+       
 
+    }
+}
 
 .Herkunft {
     background-image: url(/images/FEND-Coffee-bags-2.jpg),
@@ -134,12 +139,15 @@
     text-align: center;
 
     .container9 {
-       
+       margin-bottom: 12px;
     }
 
     .container10 {
-        width: 241px;
         height: 68px;
+        max-width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+        margin-bottom: 20px;
     }
 
     .container11_link {
@@ -163,21 +171,43 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-        
-    &_icons {
-        display: inline-flex;
-        //flex-wrap: wrap;
-        //flex-direction: column;
-        justify-content: space-between;
-        //flex: 1;
-        text-align: center;
-
-        
+    
+    .box_h2 {
+        margin-bottom: 35px;
+        margin-top: 60px;
     }
 
-    .container12 {
-        display: flex;
-        flex-wrap: wrap;
+    &_coffee_bag {
+        margin-bottom: 44px;
+    }
+
+    &_icons, .text_tasse, .text_schaufel, .text_pflanze {
+        display: inline-flex;
+        
+        justify-content: space-between;
+        text-align: center;
+
+    
+        
+        /*  für media queries:
+
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex: 1; 
+            
+        */
+    }
+
+        .text_tasse, .text_schaufel, .text_pflanze {
+           height: 49px;
+           margin-top: 12px;
+           
+        }
+
+        .container12 {
+            display: flex;
+            flex-wrap: wrap;
+    
     }
 
  }
@@ -185,4 +215,16 @@
 
 .map {
     width: 100%;
+
+    .img_map {
+        width: 100%;
+        height: 231px;
+
+        /* dieses Bild soll durch eine live-Karte ersetzt werden */
+    }
+    
+    h2 {
+        margin-left: 24px;
+        margin-bottom: 35px;
+    }
 }
