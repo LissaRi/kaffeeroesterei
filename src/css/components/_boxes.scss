@@ -5,12 +5,17 @@
     margin: 60px 24px 40px 24px;
     background-color: $color-white;
 
+ /*@include respond (media-small) {
+        margin: 124px, 100px, 137px, 100px;
+    } */
+
     .container1 {
         margin-bottom: 20px;
     }
 
     .container2 {
        margin-bottom: 20px;
+      
     }
 
     .container3 {
@@ -26,16 +31,22 @@
 
     .container5 {
      
+
+        .img_coffee_shop {
+            width: 241px;
+            height: 182px;
+            margin-left: 33%;
+            margin-top: 20px;
+            
+}
+
     }
+
+   
     
 }
 
-.img_coffee_shop {
-    width: 241px;
-    height: 182px;
-    margin-left: 33%;
-    margin-top: 20px;
-}
+
 
 .img_coffee_plant {
     width: 241px;
@@ -70,8 +81,13 @@
     }
 }
 
-.box_shop {
+.section_shop {
+    height: 910px;
     background-color: $color-black;
+}
+
+.box_shop {
+    //background-color: $color-black;
     display: flex;
     flex-wrap: wrap;
     padding: 60px 24px;
@@ -164,6 +180,10 @@
 
 }
 
+.section_coffee-content {
+    height: 800px;
+}
+
 .box_Herkunft { 
 
     display: flex;
@@ -226,5 +246,6 @@
     h2 {
         margin-left: 24px;
         margin-bottom: 35px;
+        margin-top: 72px;
     }
 }
