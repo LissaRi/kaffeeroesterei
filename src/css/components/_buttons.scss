@@ -71,4 +71,9 @@
     font-weight: $Font-weight-400;
     text-decoration: none;
     text-align: center;
+
+    @include respond(media-small) {
+       align-self: center;
+            
+    }
 }
