@@ -25,6 +25,10 @@
     font-size: $font-size-bodytext-mobil;
     font-weight: $Font-weight-400;
     text-decoration: none;
+
+    @include respond(media-small) {
+        margin-top: 60%;
+    }
 }
 
 .button_dunkel2 {
@@ -72,8 +76,5 @@
     text-decoration: none;
     text-align: center;
 
-    @include respond(media-small) {
-       align-self: center;
-            
-    }
+
 }

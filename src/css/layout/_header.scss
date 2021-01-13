@@ -1,11 +1,23 @@
 .header_subpage {
-    height: 75vh;
-
+    display: flex;  
+    height: 55vh;
     background-image: 
-    url(../images/FEND-Coffee-shop.jpg),
+    url(/images/FEND-Coffee-shop.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-
+    background-size: cover;
+    background-position: center;
     position: relative;
+}
+
+.header_logo_box {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+
+.header_logo {
+  width: 35px;
+  height: 35px;
 }
 
 .header_Startseite {
@@ -18,6 +30,10 @@
     background-position: center;
     position: relative;
     color: $color-white;
+
+    @include respond(media-small) {
+      height: 65vh;
+    }
     
 }
 
