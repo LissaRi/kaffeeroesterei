@@ -1,5 +1,6 @@
 /*
 $media-small: 576px;
+$media-700: 700px;
 $media-medium: 768px;
 $media-large: 992px;
 $media-xl: 1200px;
@@ -10,6 +11,10 @@ $media-xxl: 1920px;
 @mixin respond($breakpoint) {
     @if $breakpoint == media-small {
         @media (min-width: 36em) { @content };
+    }
+
+    @if $breakpoint == media-700 {
+        @media (min-width:43.75em) { @content };
     }
 
     @if $breakpoint == media-medium {

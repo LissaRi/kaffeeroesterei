@@ -1,12 +1,11 @@
 .box_rösterei {
-    display: flex;
-    flex-wrap: wrap;
     
     margin: 60px 24px 40px 24px;
     background-color: $color-white;
 
     @include respond(media-small) {
-        flex: 1;
+        display: flex;
+        align-items: flex-start;
         margin: 124px, 100px, 137px, 100px;
     }
  
@@ -19,41 +18,48 @@
        margin-bottom: 20px;
 
        @include respond(media-small) {
-           width: 50%;
+           width: 100%;
        }
       
     }
 
     .container3 {
-      margin-bottom: 20px;
-      margin-right: 17px;
+        margin-bottom: 20px;
+        margin-right: 17px;
+        display: inline-flex;
 
     }
 
     .container4 {
        margin-bottom: 20px;
+       display: inline-flex;
         
     }
    
     
 }
 
+.box_rösterei_text {
+    @include respond(media-small) {
+        width: 60%;
+    }
+}
+
 .container5 {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 24px 40px 24px;
-        align-items: flex-end;
+        margin-left: 25%;
+        margin-top: 20px;
 
         @include respond(media-small) {
-            
+            margin-left: 10%;
         }
 
     .img_coffee_shop {
         
-        width: 241px;
-        height: 182px;
-        
-        
+        max-width:100%;
+       
+        @include respond(media-small) {
+           
+        }
         
     }
 
@@ -61,6 +67,15 @@
 
 
 
+.container_coffee_plant {
+    margin-bottom: 125px;
+
+    @include respond(media-small) {
+           margin-top: 50px;
+           margin-right: 10%;
+            
+    }
+}
 
 .img_coffee_plant {
     width: 241px;
@@ -68,7 +83,7 @@
     flex-wrap: wrap;
 
     @include respond(media-small) {
-            margin-bottom: 125px;
+           
             
     }
 
@@ -124,6 +139,10 @@
     flex-wrap: wrap;
     padding: 60px 24px;
     
+    @include respond(media-small) {
+        justify-content: center;
+            
+    }
 
     h2 {
        color: $color-white;
@@ -145,12 +164,28 @@
     .shop_coffee_variety {
 
 
-        margin-right: 8px;        
+        margin-right: 8px;   
+        margin-bottom: 35px;
+
+        @include respond(media-small) {
+           margin-right: 16px;
+           
+        }
+
+        @include respond(media-700) {
+           margin-right: 32px;
+            
+        }
 
         &_Costa_Rica {
             width: 155px;
             height: 208px;
             list-style-type: none;
+
+            @include respond(media-700) {
+                width: 110%;
+               
+            }
         }
 
         &_package {
@@ -173,6 +208,9 @@
             width: 12px;
             height: 14px;
             list-style-type: none;
+            display: inline-flex;
+            color: white;
+            
         }
 
        
@@ -207,10 +245,6 @@
         margin-right: 17.5%;
         margin-bottom: 20px;
 
-        @include respond (media-small) {
-            max-width: 45%;
-            margin: auto;
-        }
         
        
     }
@@ -241,53 +275,57 @@
 .box_Herkunft { 
 
     display: flex;
+    flex-direction: column;
     background-color: $color-white;
-    flex-wrap: wrap;
     text-align: center;
-    
-    
-    justify-content: space-around;
-    align-items: flex-end;
+
 
     @include respond(media-small) {
         height: 500px;
         align-items: flex-start;
-        
+        flex-wrap: wrap;
+        align-items: flex-end;
     }
 
     .img_coffee_bag {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &_coffee_bag {
         margin-bottom: 44px;
+       
     }
 
-    &_icons, .text_tasse, .text_schaufel, .text_pflanze {
-        display: inline-flex;
+
+    .box_Herkunft_icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        @include respond (media-small) {
+           flex-direction: column;
+            margin-right: 100px;
+
+
+        }
+
+    }
+
+    .icon-und-text {
+        width:87px;
+        height:123px;
+
+        .icon_herkunft {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+
+    .container12 {
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
-        
-     @include respond(media-small) {
-
-        flex-wrap: nowrap;
-        flex-direction: column;
-        flex: 1;
-          
-        }
-    
     }
 
-        .text_tasse, .text_schaufel, .text_pflanze {
-           height: 49px;
-           
-        }
 
-        .container12 {
-            display: flex;
-            flex-wrap: wrap;
-    
-    }
 
 } 
 
