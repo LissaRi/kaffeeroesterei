@@ -130,7 +130,7 @@
 }
 
 .section_shop {
-    height: 910px;
+    height: auto;
     background-color: $color-black;
 }
 
@@ -227,6 +227,7 @@
     linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center;
+   
     width: 100%;
     min-height: 20vh;
     height: 50vh;
@@ -269,7 +270,7 @@
 }
 
 .section_coffee-content {
-    height: 800px;
+    height: auto;
 }
 
 .box_h2 {
@@ -318,7 +319,9 @@
         height:123px;
 
         @include respond (media-small) {
-          
+            display: flex;
+            align-items: center;
+
         }
 
         .icon_herkunft {
@@ -330,9 +333,13 @@
         }
 
         .text_herkunft {
-
             
-
+            @include respond(media-small) {
+                margin-left: 33px; 
+                flex-direction: column;
+            }
+           
+           
         }
     }
 

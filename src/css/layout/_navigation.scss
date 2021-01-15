@@ -8,6 +8,7 @@
         top: 21px;
         right: 25px;
         z-index: 2000;
+      
     
         cursor: pointer;
     }
@@ -26,7 +27,7 @@
         text-align: left;
         padding-left: 60px;
         padding-top: 251px;
-        position: fixed;
+        position: absolute;
         z-index: 1500;
         opacity: 0; 
         width: 0;
@@ -41,7 +42,7 @@
     }
 
     &_item {
-        margin: 2rem;
+        margin: 1rem;
 
     }
 
@@ -70,17 +71,19 @@
 
     &_checkbox:checked + &_button &_icon {
         background-color: transparent;
+        
     }
 
     &_checkbox:checked + &_button &_icon::before {
         top: 0;
         transform: rotate(45deg);
+        width:2rem;
     }
 
     &_checkbox:checked + &_button &_icon::after {
         top: 0;
         transform: rotate(-45deg);
-        width: 3rem;
+        width: 2rem;
     }
 
     &_icon {
@@ -88,7 +91,7 @@
         &,
         &::before,
         &::after {
-            width: 3rem;
+            width: 2rem;
             height: 3px;
             background-color: $color-white;
             display: inline-block;
@@ -102,14 +105,14 @@
         }
 
         &::before {
-            top: -.8rem; 
+            top: -.5rem; 
             left: 0;
         }
         
             &::after {
-            top: .8rem; 
+            top: .5rem; 
             left: 0;
-            width: 2rem;
+            width: 1.5rem;
         }
     }
 

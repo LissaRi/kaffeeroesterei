@@ -5,34 +5,33 @@
 }
 
 html {
-  font-size: 62.5%; // 1rem=10px
 
   @include respond(media-small) {
-    font-size: 1.4rem;
+    font-size: 0.875rem;
   }
 
   @include respond(media-700) {
-    font-size: 1.4rem;
+    font-size: 0.875rem;
   }
 
   @include respond(media-741) {
-    font-size: 1.4rem;
+    font-size: 0.875rem;
   }
 
   @include respond(media-medium) {
-    font-size: 1.4rem;
+    font-size: 0.875rem;
   }
 
   @include respond(media-large) {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
   }
 
   @include respond(media-xl) {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
   }
 
   @include respond(media-xxl) {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
   }
 
 
