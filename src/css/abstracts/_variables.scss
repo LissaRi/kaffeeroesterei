@@ -39,19 +39,7 @@ $font-size-bodytext-mobil: 0.875rem;
     transform: translate(-50%, -38.5%);
     text-align: center;
 
-    a:hover {
-        background-color: $color-anthrazit;
-    }
 
-    a:active {
-        background-color: $color-kraftpapier;
-
-    }
-
-    a:focus {
-
-    }
-}
 
 .h1_m {
     color: $color-white;
@@ -63,18 +51,5 @@ $font-size-bodytext-mobil: 0.875rem;
     color: $color-white;
 }
 
-.shop_btn {
 
-    a:hover {
-        background-color: $color-anthrazit;
-    }
-
-    a:active {
-        background-color: $color-kraftpapier;
-
-    }
-
-    a:focus {
-
-    }
 }

@@ -26,6 +26,21 @@
     font-weight: $Font-weight-400;
     text-decoration: none;
 
+    &:hover {
+        background-color: $color-anthrazit;
+    }
+
+    &:active {
+        background-color: $color-kraftpapier;
+    }
+
+    &:focus {
+        border-style: solid;
+        border-color: $color-kraftpapier;
+        
+    }
+
+
     @include respond(media-small) {
         margin-top: 60%;
     }
@@ -59,6 +74,20 @@
     font-weight: $Font-weight-400;
     text-decoration: none;
 
+    &:hover {
+        background-color: $color-anthrazit;
+    }
+
+    &:active {
+        background-color: $color-kraftpapier;
+    }
+
+    &:focus {
+        border-style: solid;
+        border-color: $color-kraftpapier;
+        
+    }
+
     @include respond (media-small) {
         margin-top: 75px;
         margin-bottom: 0px;
@@ -89,6 +118,20 @@
     font-weight: $Font-weight-400;
     text-decoration: none;
     text-align: center;
+
+    &:hover {
+        background-color: $color-anthrazit;
+    }
+
+    &:active {
+        background-color: $color-kraftpapier;
+    }
+
+    &:focus {
+        border-style: solid;
+        border-color: $color-kraftpapier;
+        
+    }
 
     @include respond(media-small) {
         justify-content: center;      
