@@ -16,8 +16,8 @@
     height: 48px;
 
 
-    background: #1A1A1A;
-    border: 2px solid #1A1A1A;
+    background: $color-black;
+    border: 2px solid $color-black;
     box-sizing: border-box;
     border-radius: 5px;
 
@@ -29,6 +29,8 @@
     @include respond(media-small) {
         margin-top: 60%;
     }
+
+
 }
 
 .button_dunkel2 {
@@ -38,10 +40,11 @@
     align-items: center;
 
     padding: 15px 45px;
+    
    
     width: 163px; //45%
     height: 48px;
-    transform: translate(65%, 38.5%);
+    transform: translate(72%, 38.5%);
   
     text-align: center;
 
@@ -82,7 +85,7 @@
     text-align: center;
 
     @include respond(media-small) {
-     justify-content: center;      
-            
+        justify-content: center;      
+        transform: translate(105%, 0%);
     }
 }

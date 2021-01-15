@@ -145,16 +145,16 @@
             
     }
 
+    @include respond(media-741) {     //Wieso klappt es nicht, dass der Kaffee ab jetzt in einer Reihe angezeigt wird?
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
     h2 {
        color: $color-white;
        margin-bottom: 40px;
     }
     
-    .shop_btn {
-
-       
-        
-    }
 
     .shop_items {
 
@@ -167,6 +167,8 @@
 
         margin-right: 8px;   
         margin-bottom: 35px;
+
+    
 
         @include respond(media-small) {
            margin-right: 16px;
@@ -181,7 +183,7 @@
         &_Costa_Rica {
             width: 155px;
             height: 208px;
-            list-style-type: none;
+           
 
             @include respond(media-700) {
                 width: 110%;
@@ -226,6 +228,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    min-height: 20vh;
     height: 50vh;
    
     color: $color-white;
@@ -314,7 +317,9 @@
         width:87px;
         height:123px;
 
-        
+        @include respond (media-small) {
+          
+        }
 
         .icon_herkunft {
             width: 45px;
@@ -326,7 +331,7 @@
 
         .text_herkunft {
 
-    
+            
 
         }
     }
