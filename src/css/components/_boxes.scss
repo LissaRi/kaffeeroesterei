@@ -83,10 +83,7 @@
     height: 160px;
     flex-wrap: wrap;
 
-    @include respond(media-small) {
-           
-            
-    }
+    
 
     }
 
@@ -133,33 +130,24 @@
 .section_shop {
     height: auto;
     background-color: $color-black;
+
+    h2 {
+        color: $color-white;
+        padding: 60px 45px 40px 21px;
+       
+      
+     }
 }
 
 .box_shop {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 24px;
-    
-
-    @include respond(media-small) {
-        justify-content: center;
-            
-    }
-
-    @include respond(media-741) {     //Wieso klappt es nicht, dass der Kaffee ab jetzt in einer Reihe angezeigt wird?
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-
-    h2 {
-       color: $color-white;
-       margin-bottom: 40px;
-    }
-    
+    padding: 0px 24px;
+    justify-content: center;
 
     .shop_coffee_variety {
 
-
+       justify-content: center;
         margin-right: 8px;   
         margin-bottom: 35px;
 
@@ -170,20 +158,21 @@
            
         }
 
-        @include respond(media-700) {
-           margin-right: 32px;
-            
+        @include respond(media-662) {
+            margin-right: 32px;
+            font-size: $font-size-bodytext;
         }
 
+
         &_Costa_Rica {
-            width: 155px;
+            max-width: 155px;
             height: 208px;
            
-
-            @include respond(media-700) {
-                width: 110%;
-               
+            @include respond(media-662) {
+                max-width: 100%;
+                height: auto;
             }
+
         }
 
         &_package {
@@ -199,6 +188,10 @@
             font-weight: $Font-weight-400;
             color: $color-medium-grey;
             list-style-type: none;
+
+            @include respond(media-662) {
+                font-size: $font-size-bodytext;
+            }
 
         }
 
