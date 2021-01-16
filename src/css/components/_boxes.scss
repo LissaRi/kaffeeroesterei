@@ -123,6 +123,11 @@
         margin-bottom: 40px;
         a {
             text-decoration: none;
+
+            @include respond (media-small) {
+                font-size: $font-size-bodytext;
+            }
+
         }
     }
 }
@@ -251,6 +256,12 @@
         font-size: $font-size-bodytext-mobil;
         font-weight: $Font-weight-400;
         line-height: 1.8rem;
+        
+        @include respond(media-small) {
+            font-size: $font-size-bodytext;
+        }
+
+
         }
 
     }
@@ -325,6 +336,7 @@
             @include respond(media-small) {
                 margin-left: 33px; 
                 flex-direction: column;
+
             }
            
            

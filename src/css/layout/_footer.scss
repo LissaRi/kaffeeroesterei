@@ -26,6 +26,10 @@
         list-style-type: none;
         width: 156px;
         margin: 0px, 17px, 17px, 0px;
+
+     /* @include respond (media-small) {
+            font-size: $font-size-bodytext-mobil;   Das funktioniert nicht!!!
+        }*/
     }
 
     &_box_opened {
@@ -33,6 +37,10 @@
         list-style-type: none;
         width: 156px;
         margin-bottom: 26px;
+
+      /*  @include respond (media-small) {
+            font-size: $font-size-bodytext-mobil;
+        }*/
     }
 
     &_box_text3 {
