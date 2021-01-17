@@ -11,6 +11,10 @@
       
     
         cursor: pointer;
+
+        @include respond (media-large) {
+            opacity: 0;
+        }
     }
     
     &_background {
@@ -32,6 +36,14 @@
         opacity: 0; 
         width: 0;
       
+        @include respond (media-large) {
+           
+            opacity: 1;
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 0px;
+
+        }
        
 
     }
@@ -39,10 +51,22 @@
     &_list {
         list-style: none;
 
+        @include respond (media-large) {
+            
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+            ;
+        }
+
     }
 
     &_item {
         margin: 1rem;
+
+        @include respond (media-large) {
+            margin: 10px 35px;
+        }
 
     }
 
@@ -51,6 +75,12 @@
         font-weight: $Font-weight-900;
         color: $color-white;
         text-decoration: none;
+
+        @include respond (media-large) {
+            font-size: $font-size-bodytext;
+    
+        }
+
     }
  
     &_checkbox {

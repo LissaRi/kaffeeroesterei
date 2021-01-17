@@ -7,6 +7,7 @@
         display: flex;
         align-items: flex-start;
         margin: 124px, 100px, 137px, 100px;
+        justify-content: center;
     }
  
 
@@ -19,11 +20,9 @@
 
        @include respond(media-small) {
            width: 100%;
+            font-size: $font-size-bodytext;
        }
 
-       @include respond(media-small) {
-        font-size: $font-size-bodytext;
-      }
       
     }
 
@@ -224,9 +223,21 @@
             display: inline-flex;
             color: white;
             
+
             img {
                 margin: 1px 2px;
+
+                @include respond (media-medium) {
+                    height: 16px;
+                }
+
+                @include respond (media-large) {
+                    height: 18px;
+                }
+
             }
+
+
         }
 
     }
@@ -312,6 +323,10 @@
 
     .img_coffee_bag {
         margin-bottom: 44px;
+
+        @include respond (media-xxl) {
+            margin-left: 25%;               /*Das sollte die Kaffeetüte und den Text zentrieren, läuft aber irgendwie nicht*/
+        }
        
     }
 
@@ -332,6 +347,12 @@
 
         @include respond (media-medium) {
             margin-right: 20%;
+        }
+
+        @include respond (media-xxl) {     /*Das sollte die Kaffeetüte und den Text zentrieren, läuft aber irgendwie nicht*/
+            margin-right: 25%;
+            margin-left: 0px;
+            padding-right: 10%;
         }
 
     }
