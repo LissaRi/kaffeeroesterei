@@ -34,22 +34,28 @@ $font-size-bodytext-mobil: 0.875rem;
 
 .center_Rustica {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -38.5%);
     text-align: center;
+    width: 100%;
 
+  /*  @include respond(media-small) {                   Fehlermeldung: undefined mixin. Ist aber auf jeden Fall definiert, ich benutze das ja auch anderswo...
+        top: 50%;
+    } */
+    
+}
 
 
 .h1_m {
     color: $color-white;
+
 }
 
 .Subhead_m {
     font-size: $font-size-subhead-mobil;
     font-weight: $Font-weight-400;
     color: $color-white;
-}
+    }
 
 
-}

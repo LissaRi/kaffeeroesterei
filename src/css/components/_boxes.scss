@@ -20,6 +20,10 @@
        @include respond(media-small) {
            width: 100%;
        }
+
+       @include respond(media-small) {
+        font-size: $font-size-bodytext;
+      }
       
     }
 
@@ -28,11 +32,19 @@
         margin-right: 17px;
         display: inline-flex;
 
+        @include respond(media-small) {
+            font-size: $font-size-bodytext;
+          }
+
     }
 
     .container4 {
        margin-bottom: 20px;
        display: inline-flex;
+
+       @include respond(media-small) {
+        font-size: $font-size-bodytext;
+      }
         
     }
    
@@ -57,9 +69,7 @@
         
         max-width:100%;
        
-        @include respond(media-small) {
-           
-        }
+    
         
     }
 
@@ -112,7 +122,10 @@
     }
 
     .container7 {
-        
+
+        @include respond(media-small) {
+            font-size: $font-size-bodytext;
+          }
     }
 
     .container8_link {
@@ -121,13 +134,14 @@
         color: $color-black;
         line-height: 1.8rem;
         margin-bottom: 40px;
+
+        @include respond (media-small) {
+            font-size: $font-size-bodytext;
+        }
+
+
         a {
             text-decoration: none;
-
-            @include respond (media-small) {
-                font-size: $font-size-bodytext;
-            }
-
         }
     }
 }
@@ -168,6 +182,9 @@
             font-size: $font-size-bodytext;
         }
 
+        &_img {
+            list-style-type: none;
+        }
 
         &_Costa_Rica {
             max-width: 155px;
@@ -207,9 +224,10 @@
             display: inline-flex;
             color: white;
             
+            img {
+                margin: 1px 2px;
+            }
         }
-
-       
 
     }
 }
@@ -249,7 +267,7 @@
     }
 
     .container11_link {
-        
+
         a {
         text-decoration: none;
         color: $color-white;
@@ -301,14 +319,19 @@
     .box_Herkunft_icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 5%;
 
         @include respond (media-small) {
-           flex-direction: column;
-            margin-right: 100px;
+            flex-direction: column;
+            margin-left: -10%;
+            margin-right: 10%;
 
+        }
 
+        @include respond (media-medium) {
+            margin-right: 20%;
         }
 
     }

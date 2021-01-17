@@ -1,11 +1,10 @@
 .button_dunkel {
     display: flex;
-    position: absolute;
-    flex-direction: column;
+    flex-direction: row;
     align-self: flex-end;
     padding: 15px 45px;
     justify-content: center;
-    margin-top: 83%;
+    margin-top: 37%;
     margin-left: 50%;
     margin-bottom: 5%;
    
@@ -42,13 +41,23 @@
 
 
     @include respond(media-small) {
-        margin-top: 60%;
+        margin-top: 10%;
+    }
+
+    @include respond (media-large) {
+        padding: 15px 40px
     }
 
 
 }
 
-
+.container_btn_dunkel2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 25%;
+    margin-top: 20%;
+}
 
 .button_dunkel2 {
     display: flex;
@@ -58,13 +67,11 @@
     flex: 1;
 
     padding: 15px 45px;
-    //margin-top: 55px;
-    //margin-bottom: 87px;
    
-    width: 163px; //45%
+   
+    width: 163; //45%
     height: 48px;
-    transform: translate(72%, 38.5%);
-  
+    
     text-align: center;
 
     background: #1A1A1A;
@@ -99,6 +106,20 @@
     }
 }
 
+.container_btn_hell {
+  
+        padding-bottom: 5%;
+        margin: 0px 25%;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    
+    @include respond (media-small) {
+        align-content: center;
+    }
+
+}
+
 .button_hell {
     display: flex;
     flex-direction: column;
@@ -109,7 +130,7 @@
 
     width: 182px;
     height: 48px;
-    transform: translate(50%, -50%);
+    
     
 
     border: 3px solid #FFFFFF;
@@ -136,8 +157,8 @@
         
     }
 
-    @include respond(media-small) {
-        justify-content: center;      
-        transform: translate(105%, 0%);
+    @include respond (media-large) {
+        padding: 15px 40px
     }
+
 }
