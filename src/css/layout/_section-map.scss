@@ -1,0 +1,20 @@
+
+.map {
+    width: 100%;
+
+    h2 {
+        margin-left: 24px;
+        margin-bottom: 35px;
+        margin-top: 72px;
+
+        @include respond(media-small) {
+            margin-left: 100px;
+        }
+    }
+
+    .gmaps_adresse {
+        display: block;
+        width: 100% ;
+        
+    }
+}
