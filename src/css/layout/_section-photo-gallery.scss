@@ -1,0 +1,46 @@
+.photo-gallery-container {
+   
+    column-count: 2;
+    margin: 50px 24px 65px 24px ;
+    text-align: center;
+    
+        @include respond (media-small) {
+            display:flex;
+            flex-wrap: wrap;
+        
+            .photo-gallery-img1 {
+
+                }
+
+            .photo-gallery-img2 {
+                    order: 2;
+                }
+
+            .photo-gallery-img3 {
+                    order: 6;
+                }
+
+            .photo-gallery-img4 {
+                    order: 4;
+                }
+
+            .photo-gallery-img5 {
+                    order: 1;
+                }
+
+            .photo-gallery-img6 {
+                    order: 7;
+                }
+
+            .photo-gallery-img7 {
+                    order: 3;
+                }
+
+            .photo-gallery-img8 {
+                    order: 5;
+                }
+        }
+
+   
+
+}

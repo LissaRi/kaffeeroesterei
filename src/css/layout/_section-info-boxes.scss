@@ -67,8 +67,6 @@
     .img_coffee_shop {
         
         max-width:100%;
-       
-    
         
     }
 
@@ -150,10 +148,13 @@
     margin: 0px 24px 60px 24px;
     background-color: $color-white;
     
-    @include respond (media-723) {              //Wieso klappt das nicht??
-        display: flex;
-        align-items: center;
-    }
+    @include respond(media-small) {
+            display: flex;
+            align-items: flex-start;
+            margin: 124px, 100px, 137px, 100px;
+            justify-content: center;
+        }
+
 
     .container_h3 {
         line-height: 37,5px;
@@ -164,7 +165,34 @@
     .container_p {
         max-width: 611px;
         max-height: 192px;
-     
+        margin-bottom: 20px;
+       
+    }
+}
+
+
+.box_origin {
+    margin: 0px 24px 60px 24px;
+    background-color: $color-white;
+    
+    @include respond(media-small) {
+            display: flex;
+            align-items: flex-start;
+            margin: 124px, 100px, 137px, 100px;
+            justify-content: center;
+        }
+
+
+    .container_h3 {
+        line-height: 37,5px;
+        margin-bottom: 20px;
+        
+    }
+
+    .container_p {
+        max-width: 611px;
+        max-height: 192px;
+        margin-bottom: 20px;
        
     }
 }
