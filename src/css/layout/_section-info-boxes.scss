@@ -8,6 +8,7 @@
         align-items: flex-start;
         margin: 124px, 100px, 137px, 100px;
         justify-content: center;
+       
     }
  
 
@@ -53,6 +54,7 @@
 .box_rösterei_text {
     @include respond(media-small) {
         width: 60%;
+        flex: 1 0 auto;
     }
 }
 
@@ -62,6 +64,7 @@
 
         @include respond(media-small) {
             margin-left: 10%;
+            flex: 1 1 auto;
         }
 
     .img_coffee_shop {
@@ -76,23 +79,23 @@
 
 .container_coffee_plant {
     margin-bottom: 125px;
+    margin-right: 25%;
 
     @include respond(media-small) {
            margin-top: 50px;
            margin-right: 10%;
-           
+           flex: 1 1 auto;
             
     }
+
+    .img_coffee_plant {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
 }
 
-.img_coffee_plant {
-    width: 241px;
-    height: 160px;
-    flex-wrap: wrap;
 
-    
-
-    }
 
 .box_bio {
     display:flex;
@@ -106,8 +109,14 @@
         
 
         .box_bio_text {
-            width: 50%;
-            height: 120px;
+            width: 60%;
+            height: auto;
+            
+            @include respond (media-small) {
+                flex: 1 0 auto;
+            }
+
+           
 
             
         }
@@ -164,7 +173,6 @@
 
     .container_p {
         max-width: 611px;
-        max-height: 192px;
         margin-bottom: 20px;
        
     }
@@ -191,7 +199,7 @@
 
     .container_p {
         max-width: 611px;
-        max-height: 192px;
+       
         margin-bottom: 20px;
        
     }
