@@ -146,6 +146,56 @@
         }
     }
 
-   
+    // Dunkles Navigationsmenü auf Impressum-Seite: //
 
+    &_checkbox:checked + &_button &_icon_dark {
+        background-color: transparent;
+        
+    }
+
+    &_checkbox:checked + &_button &_icon_dark::before {
+        top: 0;
+        transform: rotate(45deg);
+        width:2rem;
+        background-color: $color-white;
+    }
+
+    &_checkbox:checked + &_button &_icon_dark::after {
+        top: 0;
+        transform: rotate(-45deg);
+        width: 2rem;
+        background-color: $color-white;
+    }
+
+
+        &_icon_dark {
+            position: relative;
+            &,
+            &::before,
+            &::after {
+                width: 2rem;
+                height: 3px;
+                background-color: $color-black;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                top: -.5rem; 
+                left: 0;
+            }
+            
+                &::after {
+                top: .5rem; 
+                left: 0;
+                width: 1.5rem;
+            }
+        }
+    
+       
 }
