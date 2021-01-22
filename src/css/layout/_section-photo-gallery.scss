@@ -3,44 +3,62 @@
     column-count: 2;
     margin: 50px 24px 65px 24px ;
     text-align: center;
+
     
-        @include respond (media-small) {
+        @include respond (media-670) {
             display:flex;
             flex-wrap: wrap;
+            justify-content: center;
         
             .photo-gallery-img1 {
-
+                flex: 1;
                 }
 
             .photo-gallery-img2 {
                     order: 2;
+                    flex: 1;
                 }
 
             .photo-gallery-img3 {
                     order: 6;
+                    margin-top: -95px;
+                    flex: 1;
                 }
 
             .photo-gallery-img4 {
                     order: 4;
+                    margin-top: -80px;
+                    flex: 1;
                 }
 
             .photo-gallery-img5 {
                     order: 1;
+                    flex: 1;
                 }
 
             .photo-gallery-img6 {
                     order: 7;
+                    margin-top: 10px;
+                    flex: 1;
                 }
 
             .photo-gallery-img7 {
                     order: 3;
+                    flex: 1;
                 }
 
             .photo-gallery-img8 {
                     order: 5;
+                    margin-top: 8px;
+                    flex: 1;
                 }
         }
 
+        @include respond(media-826) {
+            width: 777px;
+            margin-left: auto;
+            margin-right: auto;
+        }
    
 
 }

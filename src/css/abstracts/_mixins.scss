@@ -1,8 +1,10 @@
 /*
 $media-small: 576px;
 $media-662: 662px;
+$media-670: 670px;
 $media-723: 723px;
 $media-medium: 768px;
+$media-826: 826px;
 $media-large: 992px;
 $media-xl: 1200px;
 $media-xxl: 1920px;
@@ -18,12 +20,20 @@ $media-xxl: 1920px;
         @media (min-width: 41.375em) { @content };
     }
 
+    @if $breakpoint == media-670 {
+        @media (min-width: 41.875em) { @content };
+    }
+
     @if breakpoint == media-723 {
         @media (min-width: 45.1875em) { @content };
     }
 
     @if $breakpoint == media-medium {
         @media (min-width: 48em) { @content };
+    }
+
+    @if $breakpoint == media-826 {
+        @media (min-width: 51.625em) { @content };
     }
 
     @if $breakpoint == media-large {
