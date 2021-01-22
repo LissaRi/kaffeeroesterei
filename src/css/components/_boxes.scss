@@ -98,67 +98,25 @@
     }
 }
 
-.Herkunft {
-    
-    background-image: url(/images/FEND-Coffee-bags-2.jpg),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-size: cover;
-    background-position: center;
-   
-    width: 100%;
-    min-height: 20vh;
-    height: 50vh;
-   
-    color: $color-white;
-    padding: 137px, 66px, 127px, 68px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
- 
-    
-    .container9 {
-       margin-bottom: 12px;
-    }
-
-    .container10 {
-        height: 68px;
-        max-width: 65%;
-        margin-left: 17.5%;
-        margin-right: 17.5%;
-        margin-bottom: 20px;
-
-        
-       
-    }
-
-    .container11_link {
-
-        a {
-        text-decoration: none;
-        color: $color-white;
-        font-size: $font-size-bodytext-mobil;
-        font-weight: $Font-weight-400;
-        line-height: 1.8rem;
-        
-        @include respond(media-small) {
-            font-size: $font-size-bodytext;
-        }
-
-
-        }
-
-    }
-
-}
 
 .section_coffee-content {
     height: auto;
+    
+    @include respond (media-large) {
+        max-width: 1100px;
+        margin: 100px auto;
+    }
+    
 }
 
 .box_h2 {
         margin-bottom: 35px;
         margin-top: 60px;
+
+        @include respond (media-large) {
+          
+            margin-bottom: 70px;
+        }
     }
 
 .box_Herkunft { 
@@ -178,10 +136,6 @@
 
     .img_coffee_bag {
         margin-bottom: 44px;
-
-        @include respond (media-xxl) {
-            margin-left: 25%;               /*Das sollte die Kaffeetüte und den Text zentrieren, läuft aber irgendwie nicht*/
-        }
        
     }
 
@@ -204,11 +158,6 @@
             margin-right: 20%;
         }
 
-        @include respond (media-xxl) {     /*Das sollte die Kaffeetüte und den Text zentrieren, läuft aber irgendwie nicht*/
-            margin-right: 25%;
-            margin-left: 0px;
-            padding-right: 10%;
-        }
 
     }
 

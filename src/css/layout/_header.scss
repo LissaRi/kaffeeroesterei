@@ -1,6 +1,6 @@
 .header_subpage_cafe {
     display: flex;  
-    height: 55vh;
+    height: 400px;
     background-image: 
     url(/images/FEND-coffee-shop.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -16,7 +16,7 @@
 
 .header_Startseite {
     display: flex;
-    height: 75vh;
+    height: 500px;
     background-image:
     url(../images/FEND-coffee-latte-art-3.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -26,7 +26,7 @@
     color: $color-white;
 
     @include respond(media-small) {
-      height: 65vh;
+      height: 450px;
       background-image: url(/images/FEND-coffee-latte-art-3_big.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     }
@@ -35,7 +35,7 @@
 
 .header_subpage_herkunft {
   display: flex;  
-  height: 55vh;
+  height: 400px;
   background-image: 
   url(/images/FEND-coffee-beans-hand-2.jpg),
   linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -46,6 +46,7 @@
   @include respond(media-small) {
     background-image: url(/images/FEND-coffee-beans-hand-2_big.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    height: 300px;
   }
 
 }
