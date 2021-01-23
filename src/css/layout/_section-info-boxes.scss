@@ -52,8 +52,9 @@
 }
 
 .box_rösterei_text, .box_area_text {
+    margin: 0px 24px;
     @include respond(media-small) {
-        width: 60%;
+        width: 40%;
         flex: 1 0 auto;
     }
 }
@@ -70,6 +71,10 @@
     .img_coffee_shop {
         
         max-width:100%;
+
+        @include respond(media-small) {
+            width: 100%;
+        }
         
     }
 
@@ -91,6 +96,11 @@
     .img_coffee_plant {
         max-width: 100%;
         flex-wrap: wrap;
+
+        @include respond(media-small) {
+            width: 100%;
+             
+     }
     }
 
 }
@@ -109,7 +119,7 @@
         
 
         .box_bio_text, .box_farmers_text {
-            width: 60%;
+            width: 40%;
             height: auto;
             
             @include respond (media-small) {

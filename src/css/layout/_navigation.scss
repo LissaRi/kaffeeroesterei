@@ -74,6 +74,7 @@
         font-weight: $Font-weight-900;
         color: $color-white;
         text-decoration: none;
+        position: relative;
 
         @include respond (media-large) {
             font-size: $font-size-bodytext;
@@ -81,6 +82,26 @@
         }
 
     }
+
+    &_link::after {
+        display: inline-block;
+        content: "";
+        
+        width: 0;
+        height: 100%;
+        position: absolute;
+            bottom: .14em;
+            left: 0;
+
+        border-bottom: 1px solid ;
+        transition: all .4s;  
+    }
+
+    &_link:hover::after {
+        width: 80%;
+    }
+
+   
  
     &_checkbox {
         display: none;
