@@ -224,12 +224,13 @@
     &_link_dark {
         font-size: $font-size-h3-mobil;
         font-weight: $Font-weight-900;
-        color: $color-black;
+        color: $color-white;
         text-decoration: none;
         position: relative;
     
         @include respond (media-large) {
             font-size: $font-size-bodytext;
+            
         
         }
     }
