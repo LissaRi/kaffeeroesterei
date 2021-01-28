@@ -5,6 +5,17 @@
 .contact_h2 {
     display: block;
     margin-top: 15%;
-  
+}
+
+.contact_data {
+    display: flex;
+    flex-direction: column;
+    
+
+    @include respond(media-small) {
+        flex-wrap: wrap;
+        align-items: flex-end;
+       
+    }
 }
 
