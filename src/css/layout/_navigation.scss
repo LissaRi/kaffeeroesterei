@@ -230,7 +230,7 @@
     
         @include respond (media-large) {
             font-size: $font-size-bodytext;
-            
+            color: $color-black;
         
         }
     }
