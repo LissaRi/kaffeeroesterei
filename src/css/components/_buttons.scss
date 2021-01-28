@@ -45,9 +45,12 @@
     }
 
     @include respond (media-large) {
-        padding: 15px 40px
+        padding: 15px 40px;
     }
 
+    @include respond(media-xxl) {
+        margin-top: 7%;
+    }    //warum nimmt er diese media query nicht an?
 
 }
 

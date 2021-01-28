@@ -1,7 +1,7 @@
 
-.Herkunft {
+.herkunft {
     
-    background-image: url(/images/FEND-coffee-bags-2.jpg),
+    background-image: url("/images/FEND-coffee-bags-2.jpg"),
     linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center;
@@ -18,18 +18,18 @@
     text-align: center;
 
     @include respond (media-medium) {
-        background-image: url(/images/FEND-coffee-bags-2_big.jpg),
+        background-image: url("/images/FEND-coffee-bags-2_big.jpg"),
         linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         max-width: 100%;
         height: 500px;
     }
  
     
-    .container9 {
+    .h3_herkunft {
        margin-bottom: 12px;
     }
 
-    .container10 {
+    .infotext_herkunft {
         height: 68px;
         max-width: 65%;
         margin-left: 17.5%;
@@ -40,7 +40,7 @@
        
     }
 
-    .container11_link {
+    .link_herkunft {
 
         a {
         text-decoration: none;

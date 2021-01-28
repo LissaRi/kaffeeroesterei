@@ -12,11 +12,11 @@
     }
  
 
-    .container1 {
+    .h2_box_rt {
         margin-bottom: 20px;
     }
 
-    .container2 {
+    .infotext_box_rt {
        margin-bottom: 20px;
 
        @include respond(media-small) {
@@ -27,7 +27,7 @@
       
     }
 
-    .container3 {
+    .adress_box_rt {
         margin-bottom: 20px;
         margin-right: 17px;
         display: inline-flex;
@@ -38,7 +38,7 @@
 
     }
 
-    .container4 {
+    .opening_hours_box_rt {
        margin-bottom: 20px;
        display: inline-flex;
 
@@ -59,7 +59,7 @@
     }
 }
 
-.container5 {
+.img_box_rösterei {
         margin-left: 25%;
         margin-top: 20px;
 
@@ -129,19 +129,19 @@
         }
     }
 
-    .container6 {
+    .h3_box_bt {
         margin-top: 40px;
         margin-bottom: 12px;
     }
 
-    .container7 {
+    .infotext_box_bt {
 
         @include respond(media-small) {
             font-size: $font-size-bodytext;
           }
     }
 
-    .container8_link {
+    .link_box_bt {
         font-size: $font-size-bodytext-mobil;
         font-weight: $Font-weight-400;
         color: $color-black;
