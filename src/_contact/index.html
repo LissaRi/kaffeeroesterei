@@ -47,53 +47,43 @@
         <h2>Schreib uns gern!</h2>
       </div>
 
-      <div class="contact_data">
-        <div>
-          <p>Name*</p>
-          <label for="name">
-            <input type="text">
-          </label>
+      <form>
+        <div class="contact_group">
+          <label for="name" class="form-label">Name*</label>
+          <input type="text" class="form-input" placeholder="Name" id="name" required>
         </div>
 
-        <div>
-          <p>E-Mail*</p>
-          <label for="e-mail">
-            <input type="email">
-          </label>
+        <div class="contact_group">
+          <label for="email" class="form-label">E-Mail*</label>
+          <input type="email" class="form-input" placeholder="E-Mail" id="email" required>
         </div>
 
-        <div>
-          <p>Telefonnummer</p>
-          <label for="phone">
-            <input type="tel">
-          </label>
+        <div class="contact_group">
+          <label for="phone" class="form-label">Telefonnummer</label>
+          <input type="tel" class="form-input" placeholder="Telefonnummer" id="phone">
         </div>
 
 
-        <div>
+        <div class="contact_group">
           <select name="subject" id="choose_subject">
             <option value="">Dein Betreff</option>
             <option value="delivery">Fragen zur Lieferung</option>
             <option value="product">Fragen zum Produkt</option>
             <option value="distribution">Vertriebsfragen</option>
             <option value="just_for_fun">einfach nur so!</option>
-
           </select>
         </div>
 
-        <div>
-          <p>Deine Nachricht</p>
-          <label for="text">
-            <input type="text">
-          </label>
+        <div class="contact_group">
+          <label for="message" class="form-label">Deine Nachricht</label>
+          <input type="text" class="form-input" placeholder="Was hast du auf dem Herzen?" id="message">
         </div>
 
         <div>
           <input type="checkbox" name="privacy">
           <label for="privacy">Ich akzeptiere die Datenschutzerklärung</label>
         </div>
-
-      </div>
+      </form>
     </section>
 
     <button class="button_dunkel">abschicken</button>
