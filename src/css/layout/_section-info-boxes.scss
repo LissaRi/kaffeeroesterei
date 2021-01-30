@@ -45,10 +45,7 @@
        @include respond(media-small) {
         font-size: $font-size-bodytext;
       }
-        
-    }
-   
-    
+    }  
 }
 
 .box_rösterei_text, .box_area_text {
@@ -69,15 +66,12 @@
         }
 
     .img_coffee_shop {
-        
         max-width:100%;
 
         @include respond(media-small) {
             width: 100%;
         }
-        
     }
-
 }
 
 
