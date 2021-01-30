@@ -1,24 +1,43 @@
+.header_contact {
+    position: relative;
+}
+
 .contact_form {
     margin: 40px 5%;
 }
 
 .contact_h2 {
     display: block;
-    margin: 15% 0px;
+    margin: 25% auto 15%;
+   
+
+    @include respond (media-small) {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        margin-left: 0;
+    }
 }
+
+.form {
+    @include respond (media-small) {
+        margin-top: 35%;
+    }
+    
+} 
+
 
 .contact_group {
   margin-bottom: 2rem;
-
-    /* display: flex;
-    flex-direction: column;
-    
-
+ 
     @include respond(media-small) {
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-end;
        
-    }*/
+    }
+   
 }
 
 .form-input {
@@ -27,6 +46,10 @@
     border: none;
     border-bottom: 3px solid $color-black;
     width: 80%;
+
+    @include respond (media-small) {
+        width: 40%;
+    }
 
     &:focus {
     outline: none;
@@ -43,7 +66,22 @@
     }
 }
 
+.form-label {
+    display: block;
+
+    @include respond (media-small) {
+        //padding-right: 38%;
+    }
+}
+
 .privacy-checkbox {
+    @include respond (media-small) {
+        text-align: right;
+    }
+    
+}
+
+.checkbox-input {
     -webkit-appearance: none;
     border: 3px solid $color-black;
     border-radius: 4px;
@@ -71,5 +109,16 @@
     border-radius: 5px;
     padding: 1em;
 
+    @include respond (media-small) {
+        width: 40%;
+    }
    
+}
+
+#btn_contact_mobil {
+
+    @include respond (media-small) {
+       margin-left: 80%;
+    }
+    
 }

@@ -33,7 +33,7 @@
   </div>
 
   <header>
-    <div class="header_logo_box">
+    <div class="header_logo_box" id="header_contact">
       <a href="/index.html" class="logo-btn_home"><img src="/images/logo_black.svg" alt="Logo Kaffeebohne im Quadrat"
           class="header_logo"></a>
     </div>
@@ -43,11 +43,12 @@
 
     <section class="contact_form">
       <div class="contact_h2">
-        <h2> Du hast Fragen?</h2>
-        <h2>Schreib uns gern!</h2>
+        <h2>Du hast Fragen? <br> Schreib uns gern!
+        </h2>
       </div>
 
-      <form>
+
+      <form class="form">
         <div class="contact_group">
           <label for="name" class="form-label">Name*</label>
           <input type="text" class="form-input" placeholder="Name" id="name" required>
@@ -79,14 +80,15 @@
           <input type="text" class="form-input" placeholder="Was hast du auf dem Herzen?" id="message">
         </div>
 
-        <div>
-          <input type="checkbox" name="privacy" class="privacy-checkbox">
+        <div class="privacy-checkbox">
+          <input type="checkbox" name="privacy" class="checkbox-input">
           <label for="privacy">Ich akzeptiere die Datenschutzerklärung</label>
         </div>
       </form>
+      <button class="button_dunkel" id="btn_contact_mobil">abschicken</button>
     </section>
 
-    <button class="button_dunkel">abschicken</button>
+
 
   </main>
   <footer class="footer">
