@@ -8,10 +8,8 @@
         align-items: flex-start;
         margin: 124px, 100px, 137px, 100px;
         justify-content: center;
-       
     }
  
-
     .h2_box_rt {
         margin-bottom: 20px;
     }
@@ -23,8 +21,6 @@
            width: 100%;
             font-size: $font-size-bodytext;
        }
-
-      
     }
 
     .adress_box_rt {
@@ -35,7 +31,6 @@
         @include respond(media-small) {
             font-size: $font-size-bodytext;
           }
-
     }
 
     .opening_hours_box_rt {
@@ -59,46 +54,55 @@
 .img_box_rösterei {
         margin-left: 25%;
         margin-top: 20px;
-
+        
         @include respond(media-small) {
             margin-left: 10%;
             flex: 1 1 auto;
+            width: 100%;
         }
-
-    .img_coffee_shop {
+      
+        .img_coffee_shop {
         max-width:100%;
 
         @include respond(media-small) {
             width: 100%;
         }
-    }
+    }  
 }
 
-
+#img_coffee-plant-2 {
+    margin-top: 20%;
+    margin-right: 3%;
+}
 
 .container_coffee_plant {
     margin-bottom: 125px;
     margin-right: 25%;
+    margin-top: 15%;
 
     @include respond(media-small) {
            margin-top: 50px;
            margin-right: 10%;
-           flex: 1 1 auto;
-            
+           margin-left: 5%;
+           flex: 1 1 auto; 
     }
 
     .img_coffee_plant {
-        max-width: 100%;
-        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+#img_coffee_worker {
+    padding-top: 10%;
+}
+
+.img_coffee_plant_area {
+    max-width:100%;
 
         @include respond(media-small) {
             width: 100%;
-             
-     }
-    }
-
+        }
 }
-
 
 
 .box_bio, .box_farmers {
@@ -111,15 +115,14 @@
         flex-direction: row-reverse;
         justify-content: center; 
         
-
         .box_bio_text, .box_farmers_text {
             width: 40%;
             height: auto;
+            padding-right: 5%;
             
             @include respond (media-small) {
                 flex: 1 0 auto;
             }
-
         }
     }
 
@@ -132,7 +135,7 @@
 
         @include respond(media-small) {
             font-size: $font-size-bodytext;
-          }
+        }
     }
 
     .link_box_bt {
@@ -140,16 +143,8 @@
         font-weight: $font-weight-400;
         color: $color-black;
         line-height: 1.8rem;
-        margin-bottom: 40px;
-
-        @include respond (media-small) {
-            font-size: $font-size-bodytext;
-        }
-
-
-        a {
-            text-decoration: none;
-        }
+        margin-bottom: 40px;    
+        text-decoration: none;
     }
 }
 
@@ -165,17 +160,14 @@
             justify-content: center;
         }
 
-
     .container_h3 {
         line-height: 38px;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px; 
     }
 
     .container_p {
         max-width: 611px;
         margin-bottom: 20px;
-       
     }
 }
 
@@ -191,17 +183,13 @@
             justify-content: center;
         }
 
-
     .container_h3 {
         line-height: 37,5px;
         margin-bottom: 20px;
-        
     }
 
     .container_p {
         max-width: 611px;
-       
         margin-bottom: 20px;
-       
     }
 }

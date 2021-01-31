@@ -3,15 +3,16 @@
 
 @import "base/base";
 
-@import "components/boxes";
 @import "components/buttons";
 @import "components/video";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/_section_coffee-content";
 @import "layout/section_Herkunft";
 @import "layout/section_impressum";
+@import "layout/section_shop";
 @import "layout/section_video";
 @import "layout/section-info-boxes";
 @import "layout/section-map";

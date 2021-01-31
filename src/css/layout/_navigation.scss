@@ -109,7 +109,6 @@
    
     &_checkbox {
         display: none;
-        
     }
 
     &_checkbox:checked ~ &_background {
@@ -127,7 +126,9 @@
         visibility: visible;
 
         animation-name: moveInRight;
+       
         animation-duration: .5s;
+
     }
 
     @keyframes moveInRight {
@@ -142,6 +143,7 @@
             transform: translateX(0);
         }
     }
+
 
     &_checkbox:checked + &_button &_icon {
         background-color: transparent;
@@ -192,6 +194,9 @@
         }
     }
 
+    #actice-link {
+        text-decoration: underline 1px solid;
+    }
     // Dunkles Navigationsmenü auf Impressum-Seite: //
 
     &_checkbox:checked + &_button &_icon_dark {

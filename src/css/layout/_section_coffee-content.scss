@@ -1,0 +1,77 @@
+.section_coffee-content {
+    height: auto;
+    
+    @include respond (media-large) {
+        max-width: 1100px;
+        margin: 100px auto;
+    } 
+}
+
+.box_h2 {
+    margin-bottom: 35px;
+    margin-top: 60px;
+
+    @include respond (media-large) {  
+        margin-bottom: 70px;
+        }
+}
+
+.box_Herkunft { 
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    text-align: center;
+
+    @include respond(media-small) {
+        height: 500px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .img_coffee_bag {
+        margin-bottom: 44px;
+       
+    }
+
+    .box_Herkunft_icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 5%;
+
+        @include respond (media-small) {
+            flex-direction: column;
+            margin-left: -10%;
+            margin-right: 10%;
+        }
+
+        @include respond (media-medium) {
+            margin-right: 20%;
+        }
+    }
+
+    .icon-und-text {
+        width:87px;
+        height:123px;
+
+        @include respond (media-small) {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon_herkunft {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 20%;
+        }
+
+        .text_herkunft {
+            
+            @include respond(media-small) {
+                margin-left: 33px; 
+                flex-direction: column;
+            }
+        }
+    }
+} 
