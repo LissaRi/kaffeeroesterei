@@ -44,7 +44,7 @@ $media-xxl: 1920px;
         @media (min-width: 75em) { @content };
     }
     
-    @if $breakpoint == media-medium-xxl {
+    @if $breakpoint == media-xxl {
         @media (min-width: 120em) { @content };
     }    
 }

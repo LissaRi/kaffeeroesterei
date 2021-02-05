@@ -23,7 +23,6 @@
     @include respond (media-small) {
         margin-top: 35%;
     }
-    
 } 
 
 
@@ -37,7 +36,6 @@
         align-items: flex-end;
        
     }
-   
 }
 
 .form-input {
@@ -78,11 +76,10 @@
     @include respond (media-small) {
         text-align: right;
     }
-    
 }
 
 .checkbox-input {
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
     border: 3px solid $color-black;
     border-radius: 4px;
     height: 20px;
@@ -112,7 +109,6 @@
     @include respond (media-small) {
         width: 40%;
     }
-   
 }
 
 #btn_contact_mobil {
@@ -120,7 +116,6 @@
     @include respond (media-small) {
        margin-left: 80%;
     }
-    
 }
 
 .grid-container {
