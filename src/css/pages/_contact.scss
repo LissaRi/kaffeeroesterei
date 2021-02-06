@@ -22,7 +22,7 @@
 .form {
     @include respond (media-small) {
         margin-top: 35%;
-        margin-left: 60%;
+        margin-left: 55%;
     }
 } 
 
@@ -60,9 +60,17 @@
 }
 
 .privacy-checkbox {
-    @include respond (media-small) {
-        text-align: right;
+
+    label{
+        @include respond (media-small) {
+        display: block;
+        }
+
+        @include respond(media-826) {
+                display:inline;
+            }
     }
+    
 }
 
 .checkbox-input {
