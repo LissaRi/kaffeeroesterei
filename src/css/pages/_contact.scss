@@ -22,20 +22,14 @@
 .form {
     @include respond (media-small) {
         margin-top: 35%;
+        margin-left: 60%;
     }
 } 
 
 
 .contact_group {
   margin-bottom: 2rem;
- 
-    @include respond(media-small) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-end;
-       
-    }
+  display:block;
 }
 
 .form-input {
@@ -44,10 +38,6 @@
     border: none;
     border-bottom: 3px solid $color-black;
     width: 80%;
-
-    @include respond (media-small) {
-        width: 40%;
-    }
 
     &:focus {
     outline: none;
@@ -67,9 +57,6 @@
 .form-label {
     display: block;
 
-    @include respond (media-small) {
-        //padding-right: 38%;
-    }
 }
 
 .privacy-checkbox {
@@ -79,7 +66,7 @@
 }
 
 .checkbox-input {
-    //-webkit-appearance: none;
+    -webkit-appearance: none;
     border: 3px solid $color-black;
     border-radius: 4px;
     height: 20px;
