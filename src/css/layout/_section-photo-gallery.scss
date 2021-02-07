@@ -4,61 +4,81 @@
     margin: 50px 24px 65px 24px ;
     text-align: center;
 
-    
-        @include respond (media-670) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include respond (media-medium) {
+
             display:flex;
             flex-wrap: wrap;
-            justify-content: center;
-        
+            justify-content: flex-start;
+            align-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            max-height: 30rem; 
+
+            @include respond(media-929) {
+                max-height: 35rem;
+            }
+   
+
             .photo-gallery-img1 {
                 flex: 1;
+                width: 22%;
+                display:inline-block;
                 }
 
             .photo-gallery-img2 {
                     order: 2;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img3 {
                     order: 6;
-                    margin-top: -95px;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img4 {
                     order: 4;
-                    margin-top: -80px;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img5 {
                     order: 1;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img6 {
                     order: 7;
                     margin-top: 10px;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img7 {
                     order: 3;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
 
             .photo-gallery-img8 {
                     order: 5;
                     margin-top: 8px;
                     flex: 1;
+                    width: 22%;
+                    display:inline-block;
                 }
-        }
-
-        @include respond(media-826) {
-            width: 777px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-   
-
+    }
 }
