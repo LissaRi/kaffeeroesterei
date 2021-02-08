@@ -17,12 +17,7 @@
             align-content: space-between;
             align-items: center;
             flex-direction: column;
-            max-height: 30rem; 
-
-            @include respond(media-929) {
-                max-height: 35rem;
-            }
-   
+            max-height: calc(100vw/2); 
 
             .photo-gallery-img1 {
                 flex: 1;
