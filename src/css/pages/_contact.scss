@@ -1,122 +1,145 @@
 .header_contact {
-    position: relative;
+  position: relative;
 }
 
 .contact_form {
-    margin: 40px 5%;
+  margin: 40px 5%;
 }
 
 .contact_h2 {
-    display: block;
-    margin: 25% auto 15%;
-   
+  display: block;
+  margin: 25% auto 15%;
 
-    @include respond (media-small) {
-        position: absolute;
-        top: 0;
-        width: 50%;
-        margin-left: 0;
-    }
+  @include respond(media-small) {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    margin-left: 0;
+  }
 }
 
 .form {
-    @include respond (media-small) {
-        margin-top: 35%;
-        margin-left: 55%;
-    }
-} 
-
+  @include respond(media-small) {
+    margin-top: 35%;
+    margin-left: 55%;
+  }
+}
 
 .contact_group {
   margin-bottom: 2rem;
-  display:block;
+  display: block;
 }
 
 .form-input {
-    font-size: $font-size-bodytext-mobil;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-bottom: 3px solid $color-black;
-    width: 80%;
+  font-size: $font-size-bodytext-mobil;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 3px solid $color-black;
+  width: 80%;
 
-    &:focus {
+  &:focus {
     outline: none;
     background-color: $color-light-grey;
 
     &:focus:invalid {
-    background-color: rgba($color: red, $alpha: .3);
-    color: red;
+      background-color: rgba($color: red, $alpha: 0.3);
+      color: red;
     }
 
     &::-webkit-input-placeholder {
-        color: $color-light-grey;
+      color: $color-light-grey;
     }
-    }
+  }
 }
 
 .form-label {
-    display: block;
-
+  display: block;
 }
 
 .privacy-checkbox {
+  position: relative;
+  content: none;
 
-    label{
-        @include respond (media-small) {
-        display: block;
-        }
-
-        @include respond(media-826) {
-                display:inline;
-            }
+  label {
+    @include respond(media-small) {
+      display: inline-block;
     }
-    
-}
 
-.checkbox-input {
-    -webkit-appearance: none;
+    // @include respond(media-826) {
+    //         display:inline;
+    //     }
+  }
+
+  label::before {
+    content: "";
+    display: inline-block;
     border: 3px solid $color-black;
     border-radius: 4px;
     height: 20px;
     width: 20px;
     margin-right: 12px;
+  }
+
+  label::after {
+    content: none;
+    display: inline-block;
+    height: 8px;
+    width: 13px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+
+    transform: rotate(-45deg);
+    left: 22px;
+    top: 5px;
+  }
 }
 
+#privacy:checked + label::after {
+  content: "";
+}
+
+// .privacy-checkbox:focus + label::before {
+//     outline: none;
+//     border: 3px solid;
+//     border-color: $color-kraftpapier;
+// }
+
+.checkbox-input {
+  opacity: 0;
+}
 
 //  Styling für id
 
-
 #message {
-    height: 200px;
+  height: 200px;
 }
 
-
 #choose_subject {
-    -webkit-appearance: none;
-    width: 80%;
-    background-color: $color-black;
-    color: $color-white;
-    font-family: inherit;
-    font-size: inherit;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 1em;
+  -webkit-appearance: none;
+  width: 80%;
+  background-color: $color-black;
+  color: $color-white;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1em;
 
-    @include respond (media-small) {
-        width: 40%;
-    }
+  @include respond(media-small) {
+    width: 40%;
+  }
 }
 
 #btn_contact_mobil {
-
-    @include respond (media-small) {
-       margin-left: 80%;
-    }
+  @include respond(media-small) {
+    margin-left: 80%;
+  }
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 5em;
 }

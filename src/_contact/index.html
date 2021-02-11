@@ -1,131 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.scss" />
-</head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation_checkbox"
+        id="navi-toggle"
+      />
+      <label for="navi-toggle" class="navigation_button">
+        <span class="navigation_icon_dark">&nbsp;</span>
+      </label>
 
-<body>
-  <div class="navigation">
-    <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation_button">
-      <span class="navigation_icon_dark">&nbsp;</span>
-    </label>
+      <div class="navigation_background">&nbsp;</div>
 
-    <div class="navigation_background">&nbsp;</div>
-
-
-    <nav class="navigation_nav">
-      <ul class="navigation_list">
-        <li class="navigation_item"><a class="navigation_link_dark" href="/_cafe/index.html">das Café</a></li>
-        <li class="navigation_item"><a class="navigation_link_dark" href="/_herkunft/index.html">Herkunft</a></li>
-        <li class="navigation_item"><a class="navigation_link_dark" href="#">Shop</a></li>
-        <li class="navigation_item"><a class="navigation_link_dark" id="actice-link"
-            href="/_contact/index.html">Kontakt</a>
-        </li>
-      </ul>
-    </nav>
-
-
-  </div>
-
-  <header>
-    <div class="header_logo_box" id="header_contact">
-      <a href="/index.html" class="logo-btn_home"><img src="/images/logo_black.svg" alt="Logo Kaffeebohne im Quadrat"
-          class="header_logo"></a>
+      <nav class="navigation_nav">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a class="navigation_link_dark" href="/_cafe/index.html"
+              >das Café</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a
+              class="navigation_link_dark"
+              href="/_herkunft/index.html"
+              >Herkunft</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link_dark" href="#">Shop</a>
+          </li>
+          <li class="navigation_item">
+            <a
+              class="navigation_link_dark"
+              id="actice-link"
+              href="/_contact/index.html"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
 
-  <main>
+    <header>
+      <div class="header_logo_box" id="header_contact">
+        <a href="/index.html" class="logo-btn_home"
+          ><img
+            src="/images/logo_black.svg"
+            alt="Logo Kaffeebohne im Quadrat"
+            class="header_logo"
+        /></a>
+      </div>
+    </header>
 
-    <section class="contact_form">
-      <div class="contact_h2">
-        <h2>Du hast Fragen? <br> Schreib uns gern!
-        </h2>
+    <main>
+      <section class="contact_form">
+        <div class="contact_h2">
+          <h2>
+            Du hast Fragen? <br />
+            Schreib uns gern!
+          </h2>
+        </div>
+
+        <form class="form">
+          <div class="contact_group">
+            <label for="name" class="form-label">Name*</label>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Name"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="contact_group">
+            <label for="email" class="form-label">E-Mail*</label>
+            <input
+              type="email"
+              class="form-input"
+              placeholder="E-Mail"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="contact_group">
+            <label for="phone" class="form-label"
+              >Telefonnummer</label
+            >
+            <input
+              type="tel"
+              class="form-input"
+              placeholder="Telefonnummer"
+              id="phone"
+            />
+          </div>
+
+          <div class="contact_group">
+            <select name="subject" id="choose_subject">
+              <option value="">Dein Betreff</option>
+              <option value="delivery">Fragen zur Lieferung</option>
+              <option value="product">Fragen zum Produkt</option>
+              <option value="distribution">Vertriebsfragen</option>
+              <option value="just_for_fun">einfach nur so!</option>
+            </select>
+          </div>
+
+          <div class="contact_group">
+            <label for="message" class="form-label"
+              >Deine Nachricht</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Was hast du auf dem Herzen?"
+              id="message"
+            />
+          </div>
+          <div class="privacy-checkbox">
+            <input
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              class="checkbox-input"
+            />
+            <label for="privacy">
+              <span class="checkbox_window"></span>
+              Ich akzeptiere die Datenschutzerklärung</label
+            >
+          </div>
+        </form>
+
+        <button class="button_dunkel" id="btn_contact_mobil">
+          abschicken
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_logo_box">
+        <img
+          src="/images/Logo_footer_mobil.svg"
+          alt="Logo Kaffebohne im Quadrat"
+          class="footer_logo"
+        />
       </div>
 
-      <form class="form">
-        <div class="contact_group">
-          <label for="name" class="form-label">Name*</label>
-          <input type="text" class="form-input" placeholder="Name" id="name" required>
-        </div>
+      <div class="footer_box_text1">
+        <h3>Rustica</h3>
+        <span class="Subhead_m">Café und Rösterei</span>
+      </div>
 
-        <div class="contact_group">
-          <label for="email" class="form-label">E-Mail*</label>
-          <input type="email" class="form-input" placeholder="E-Mail" id="email" required>
-        </div>
+      <ul class="footer_ul">
+        <li class="footer_box_text2">
+          <p>Komm uns besuchen! <br />Frauenhoferstr. 13, Kiel</p>
+        </li>
+        <li class="footer_box_opened">
+          <p>Mo - Fr 8-18 Uhr <br />Sa 11-18 Uhr</p>
+        </li>
+        <li class="footer_box_text3">
+          <ul class="footer_list">
+            <li>
+              <a class="footer_link" href="/_cafe/index.html">Café</a>
+            </li>
+            <li><a class="footer_link" href="index.html">Shop</a></li>
+            <li>
+              <a class="footer_link" href="/_herkunft/index.html"
+                >Herkunft</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="footer_box_text4">
+          <ul class="footer_list">
+            <li class="footer_item">
+              <a class="footer_link" href="/_impressum/index.html"
+                >Impressum</a
+              >
+            </li>
+            <li class="footer_item">
+              <a class="footer_link" href="#">Datenschutz</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
 
-        <div class="contact_group">
-          <label for="phone" class="form-label">Telefonnummer</label>
-          <input type="tel" class="form-input" placeholder="Telefonnummer" id="phone">
-        </div>
-
-        <div class="contact_group">
-          <select name="subject" id="choose_subject">
-            <option value="">Dein Betreff</option>
-            <option value="delivery">Fragen zur Lieferung</option>
-            <option value="product">Fragen zum Produkt</option>
-            <option value="distribution">Vertriebsfragen</option>
-            <option value="just_for_fun">einfach nur so!</option>
-          </select>
-        </div>
-
-        <div class="contact_group">
-          <label for="message" class="form-label">Deine Nachricht</label>
-          <input type="text" class="form-input" placeholder="Was hast du auf dem Herzen?" id="message">
-        </div>
-
-        <div class="privacy-checkbox">
-          <input type="checkbox" id="privacy" name="privacy" class="checkbox-input">
-          <label for="privacy">Ich akzeptiere die Datenschutzerklärung</label>
-        </div>
-      </form>
-
-      <button class="button_dunkel" id="btn_contact_mobil">abschicken</button>
-    </section>
-
-  </main>
-  <footer class="footer">
-
-    <div class="footer_logo_box">
-      <img src="/images/Logo_footer_mobil.svg" alt="Logo Kaffebohne im Quadrat" class="footer_logo">
-    </div>
-
-    <div class="footer_box_text1">
-      <h3>Rustica</h3>
-      <span class="Subhead_m">Café und Rösterei</span>
-    </div>
-
-    <ul class="footer_ul">
-      <li class="footer_box_text2">
-        <p>Komm uns besuchen! <br>Frauenhoferstr. 13, Kiel</p>
-      </li>
-      <li class="footer_box_opened">
-        <p>Mo - Fr 8-18 Uhr <br>Sa 11-18 Uhr</p>
-      </li>
-      <li class="footer_box_text3">
-        <ul class="footer_list">
-          <li><a class="footer_link" href="/_cafe/index.html">Café</a></li>
-          <li><a class="footer_link" href="index.html">Shop</a></li>
-          <li><a class="footer_link" href="/_herkunft/index.html">Herkunft</a></li>
-        </ul>
-      </li>
-      <li class="footer_box_text4">
-        <ul class="footer_list">
-          <li class="footer_item"><a class="footer_link" href="/_impressum/index.html">Impressum</a></li>
-          <li class="footer_item"><a class="footer_link" href="#">Datenschutz</a></li>
-        </ul>
-      </li>
-    </ul>
-
-  </footer>
-
-  <script src="../js/index.js"></script>
-</body>
-
+    <script src="../js/index.js"></script>
+  </body>
 </html>
