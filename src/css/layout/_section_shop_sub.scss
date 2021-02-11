@@ -1,4 +1,4 @@
-.section_shop {
+.section_shop_subpage {
   height: auto;
   background-color: $color-black;
 
@@ -42,17 +42,17 @@
       }
     }
 
-    &_package {
+    &_package_sub {
       font-size: $font-size-subhead-mobil;
       font-weight: $font-weight-400;
-      color: $color-white;
+      color: $color-black;
       list-style-type: none;
     }
 
-    &_price {
+    &_price_sub {
       font-size: $font-size-bodytext-mobil;
       font-weight: $font-weight-400;
-      color: $color-medium-grey;
+      color: $color-black;
       list-style-type: none;
 
       @include respond(media-662) {
@@ -60,12 +60,12 @@
       }
     }
 
-    &_icons {
+    &_icons_sub {
       width: 12px;
       height: 14px;
       list-style-type: none;
       display: inline-flex;
-      color: white;
+      color: $color-black;
 
       img {
         margin: 1px 2px;

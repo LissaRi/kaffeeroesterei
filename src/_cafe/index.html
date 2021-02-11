@@ -1,228 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>das Café</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>das Café</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.scss" />
-</head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation_checkbox"
+        id="navi-toggle"
+      />
+      <label for="navi-toggle" class="navigation_button">
+        <span class="navigation_icon">&nbsp;</span>
+      </label>
 
-<body>
+      <div class="navigation_background">&nbsp;</div>
 
-  <div class="navigation">
-    <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation_button">
-      <span class="navigation_icon">&nbsp;</span>
-    </label>
-
-    <div class="navigation_background">&nbsp;</div>
-
-
-    <nav class="navigation_nav">
-      <ul class="navigation_list">
-        <li class="navigation_item"><a class="navigation_link" id="actice-link" href="/_cafe/index.html">das Café</a>
-        </li>
-        <li class="navigation_item"><a class="navigation_link" href="/_herkunft/index.html">Herkunft</a></li>
-        <li class="navigation_item"><a class="navigation_link" href="#">Shop</a></li>
-        <li class="navigation_item"><a class="navigation_link" href="/_contact/index.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <header class="header_subpage_cafe">
-
-    <div class="header_logo_box">
-      <a href="/index.html" class="logo-btn_home"><img src="/images/logo-white.svg" alt="Logo Kaffeebohne im Quadrat"
-          class="header_logo"></a>
+      <nav class="navigation_nav">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a
+              class="navigation_link"
+              id="actice-link"
+              href="../_shop/index.html"
+              >das Café</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="/_herkunft/index.html"
+              >Herkunft</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="/_shop/index.html"
+              >Shop</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="/_contact/index.html"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
 
-  </header>
-
-
-  <main>
-    <section class="section_info-boxes">
-
-      <div class="box_rösterei">
-
-        <div class="box_rösterei_text">
-          <div class="h2_box_rt">
-            <h2>Rösterei & Café</h2>
-          </div>
-          <div class="infotext_box_rt">
-            <p>Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei,
-              serviert im gemütlichen Café in der Innenstadt.</p>
-          </div>
-          <div class="adress_box_rt">
-            <p>Komm uns besuchen! <br> Frauenhoferstr. 13, Kiel</p>
-          </div>
-          <div class="opening_hours_box_rt">
-            <p>Mo - Fr 8 - 18 Uhr <br> Sa 11 - 18 Uhr</p>
-          </div>
-        </div>
-        <div class="img_box_rösterei">
-          <picture>
-            <source srcset="/images/FEND-coffee-machine-2.jpg 1x, /images/FEND-coffee-machine-2_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img class="img_coffee_shop"
-              srcset="/images/FEND-coffee-machine-2.jpg 1x, /images/FEND-coffee-machine-2_big.jpg 2x" alt="Blick in ein Café im Industrial Style. Ein großer Raum, Backsteinwände, große Fenster und Lampen. Leute sitzen an Tischen 
-                          und trinken Kaffee oder durchqueren den Raum. Die Stimmung wirkt gemütlich.">
-          </picture>
-        </div>
+    <header class="header_subpage_cafe">
+      <div class="header_logo_box">
+        <a href="/index.html" class="logo-btn_home"
+          ><img
+            src="/images/logo-white.svg"
+            alt="Logo Kaffeebohne im Quadrat"
+            class="header_logo"
+        /></a>
       </div>
+    </header>
 
-      <div class="box_pastries">
-        <div class="box_pastries_text">
-          <div class="container_h3">
-            <h3>Frisches Gebäck von nebenan</h3>
+    <main>
+      <section class="section_info-boxes">
+        <div class="box_rösterei">
+          <div class="box_rösterei_text">
+            <div class="h2_box_rt">
+              <h2>Rösterei & Café</h2>
+            </div>
+            <div class="infotext_box_rt">
+              <p>
+                Kaffee aus Kiel, direkt gehandelt und geröstet in der
+                eigenen Rösterei, serviert im gemütlichen Café in der
+                Innenstadt.
+              </p>
+            </div>
+            <div class="adress_box_rt">
+              <p>
+                Komm uns besuchen! <br />
+                Frauenhoferstr. 13, Kiel
+              </p>
+            </div>
+            <div class="opening_hours_box_rt">
+              <p>
+                Mo - Fr 8 - 18 Uhr <br />
+                Sa 11 - 18 Uhr
+              </p>
+            </div>
           </div>
-          <div class="container_p">
-            <p>Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf
-              die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm eine
-              rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die
-              Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was
-              von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder
-              in sein eigenes, sicheres Land zurückkehren.</p>
+          <div class="img_box_rösterei">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-machine-2.jpg     1x,
+                  /images/FEND-coffee-machine-2_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                class="img_coffee_shop"
+                srcset="
+                  /images/FEND-coffee-machine-2.jpg     1x,
+                  /images/FEND-coffee-machine-2_big.jpg 2x
+                "
+                alt="Blick in ein Café im Industrial Style. Ein großer Raum, Backsteinwände, große Fenster und Lampen. Leute sitzen an Tischen 
+                          und trinken Kaffee oder durchqueren den Raum. Die Stimmung wirkt gemütlich."
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="box_pastries">
+          <div class="box_pastries_text">
+            <div class="container_h3">
+              <h3>Frisches Gebäck von nebenan</h3>
+            </div>
+            <div class="container_p">
+              <p>
+                Als es die ersten Hügel des Kursivgebirges erklommen
+                hatte, warf es einen letzten Blick zurück auf die
+                Skyline seiner Heimatstadt Buchstabhausen, die
+                Headline von Alphabetdorf. Wehmütig lief ihm eine
+                rhetorische Frage über die Wange, dann setzte es
+                seinen Weg fort. Unterwegs traf es eine Copy. Die Copy
+                warnte das Blindtextchen, da, wo sie herkäme wäre sie
+                zigmal umgeschrieben worden und alles, was von ihrem
+                Ursprung noch übrig wäre, sei das Wort "und" und das
+                Blindtextchen solle umkehren und wieder in sein
+                eigenes, sicheres Land zurückkehren.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-gallery">
+        <div class="photo-gallery-container">
+          <div class="photo-gallery-img1">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-danish-1.jpg     1x,
+                  /images/FEND-danish-1_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-danish-1.jpg     1x,
+                  /images/FEND-danish-1_big.jpg 2x
+                "
+                alt="Ansicht in eine Vitrine mit verschiedenen Croissants und Törtchen"
+              />
+            </picture>
           </div>
 
+          <div class="photo-gallery-img2">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-machine.jpg     1x,
+                  /images/FEND-coffee-machine_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-machine.jpg     1x,
+                  /images/FEND-coffee-machine_big.jpg 2x
+                "
+                alt="Ansicht auf eine Siebträgermaschine, Single Shot läuft"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img3">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-latte-art.jpg     1x,
+                  /images/FEND-coffee-latte-art_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-latte-art.jpg     1x,
+                  /images/FEND-coffee-latte-art_big.jpg 2x
+                "
+                alt="Barista gießt Latte-Art"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img4">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-sign.jpg     1x,
+                  /images/FEND-coffee-sign_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-sign.jpg     1x,
+                  /images/FEND-coffee-sign_big.jpg 2x
+                "
+                alt="Neonleuchtröhren formen das Wort `Coffee`"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img5">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-latte-art-2.jpg     1x,
+                  /images/FEND-coffee-latte-art-2_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-latte-art-2.jpg     1x,
+                  /images/FEND-coffee-latte-art-2_big.jpg 2x
+                "
+                alt="Ansicht auf vier Cappuccinotassen mit Latte Art. Beginnend oben, im Urzeigersinn: Schwan, Tulpe, Herz, Blatt"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img6">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-breakfast-1.jpg     1x,
+                  /images/FEND-coffee-breakfast-1_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-breakfast-1.jpg     1x,
+                  /images/FEND-coffee-breakfast-1_big.jpg 2x
+                "
+                alt="Kleiner runder Tisch mit Cappuccino, Kuchen und Wassergläsern"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img7">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-list.jpg     1x,
+                  /images/FEND-coffee-list_big.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-list.jpg     1x,
+                  /images/FEND-coffee-list_big.jpg 2x
+                "
+                alt="Ansicht auf eine Tafel mit Kaffeespezialitäten und Preise"
+              />
+            </picture>
+          </div>
+
+          <div class="photo-gallery-img8">
+            <picture>
+              <source
+                srcset="
+                  /images/FEND-coffee-latte-art-3_small.jpg  1x,
+                  /images/FEND-coffee-latte-art-3_medium.jpg 2x
+                "
+                media="(min-width:43.75em)"
+              />
+              <img
+                srcset="
+                  /images/FEND-coffee-latte-art-3_small.jpg  1x,
+                  /images/FEND-coffee-latte-art-3_medium.jpg 2x
+                "
+                alt="Ansicht von oben auf drei Hände, die mit ihren Kaffeegetränken asntoßen"
+              />
+            </picture>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="photo-gallery">
-      <div class="photo-gallery-container">
+    <section class="section_map">
+      <div class="map">
+        <h2>Komm vorbei</h2>
 
-        <div class="photo-gallery-img1">
-          <picture>
-            <source srcset="/images/FEND-danish-1.jpg 1x, /images/FEND-danish-1_big.jpg 2x" media="(min-width:43.75em)">
-            <img srcset="/images/FEND-danish-1.jpg 1x, /images/FEND-danish-1_big.jpg 2x"
-              alt="Ansicht in eine Vitrine mit verschiedenen Croissants und Törtchen">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img2">
-          <picture>
-            <source srcset="/images/FEND-coffee-machine.jpg 1x, /images/FEND-coffee-machine_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-machine.jpg 1x, /images/FEND-coffee-machine_big.jpg 2x"
-              alt="Ansicht auf eine Siebträgermaschine, Single Shot läuft">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img3">
-          <picture>
-            <source srcset="/images/FEND-coffee-latte-art.jpg 1x, /images/FEND-coffee-latte-art_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-latte-art.jpg 1x, /images/FEND-coffee-latte-art_big.jpg 2x"
-              alt="Barista gießt Latte-Art">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img4">
-          <picture>
-            <source srcset="/images/FEND-coffee-sign.jpg 1x, /images/FEND-coffee-sign_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-sign.jpg 1x, /images/FEND-coffee-sign_big.jpg 2x"
-              alt="Neonleuchtröhren formen das Wort `Coffee`">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img5">
-          <picture>
-            <source srcset="/images/FEND-coffee-latte-art-2.jpg 1x, /images/FEND-coffee-latte-art-2_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-latte-art-2.jpg 1x, /images/FEND-coffee-latte-art-2_big.jpg 2x"
-              alt="Ansicht auf vier Cappuccinotassen mit Latte Art. Beginnend oben, im Urzeigersinn: Schwan, Tulpe, Herz, Blatt">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img6">
-          <picture>
-            <source srcset="/images/FEND-coffee-breakfast-1.jpg 1x, /images/FEND-coffee-breakfast-1_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-breakfast-1.jpg 1x, /images/FEND-coffee-breakfast-1_big.jpg 2x"
-              alt="Kleiner runder Tisch mit Cappuccino, Kuchen und Wassergläsern">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img7">
-          <picture>
-            <source srcset="/images/FEND-coffee-list.jpg 1x, /images/FEND-coffee-list_big.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-list.jpg 1x, /images/FEND-coffee-list_big.jpg 2x"
-              alt="Ansicht auf eine Tafel mit Kaffeespezialitäten und Preise">
-          </picture>
-        </div>
-
-        <div class="photo-gallery-img8">
-          <picture>
-            <source srcset="/images/FEND-coffee-latte-art-3_small.jpg 1x, /images/FEND-coffee-latte-art-3_medium.jpg 2x"
-              media="(min-width:43.75em)">
-            <img srcset="/images/FEND-coffee-latte-art-3_small.jpg 1x, /images/FEND-coffee-latte-art-3_medium.jpg 2x"
-              alt="Ansicht von oben auf drei Hände, die mit ihren Kaffeegetränken asntoßen">
-          </picture>
-        </div>
-
-      </div>
-    </section>
-
-
-  </main>
-
-  <section class="section_map">
-    <div class="map">
-      <h2>Komm vorbei</h2>
-
-      <iframe class="gmaps_adresse"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169125!2d10.11983211577044!3d54.
+        <iframe
+          class="gmaps_adresse"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169125!2d10.11983211577044!3d54.
                       3418553801997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f0741
-                      62a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1610698923366!5m2!1sde!2sde" width="600" height="450"
-        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-        alt="Kartenansicht von Googlemaps auf den Standort von Rustica, Frauenhoferstr. 13, Kiel"></iframe>
-    </div>
-  </section>
+                      62a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1610698923366!5m2!1sde!2sde"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          alt="Kartenansicht von Googlemaps auf den Standort von Rustica, Frauenhoferstr. 13, Kiel"
+        ></iframe>
+      </div>
+    </section>
 
-  <footer class="footer">
+    <footer class="footer">
+      <div class="footer_logo_box">
+        <a href="/index.html"
+          ><img
+            src="/images/Logo_footer_mobil.svg"
+            alt="Logo Kaffebohne im Quadrat"
+            class="footer_logo"
+        /></a>
+      </div>
 
-    <div class="footer_logo_box">
-      <a href="/index.html"><img src="/images/Logo_footer_mobil.svg" alt="Logo Kaffebohne im Quadrat"
-          class="footer_logo"></a>
-    </div>
+      <div class="footer_box_text1">
+        <h3>Rustica</h3>
+        <span class="Subhead_m">Café und Rösterei</span>
+      </div>
 
-    <div class="footer_box_text1">
-      <h3>Rustica</h3>
-      <span class="Subhead_m">Café und Rösterei</span>
-    </div>
+      <ul class="footer_ul">
+        <li class="footer_box_text2">
+          <p>Komm uns besuchen! <br />Frauenhoferstr. 13, Kiel</p>
+        </li>
+        <li class="footer_box_opened">
+          <p>Mo - Fr 8-18 Uhr <br />Sa 11-18 Uhr</p>
+        </li>
+        <li class="footer_box_text3">
+          <ul class="footer_list">
+            <li>
+              <a class="footer_link" href="/_cafe/index.html">Café</a>
+            </li>
+            <li>
+              <a class="footer_link" href="../_shop/index.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="footer_link" href="/_herkunft/index.html"
+                >Herkunft</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="footer_box_text4">
+          <ul class="footer_list">
+            <li class="footer_item">
+              <a class="footer_link" href="/_impressum/index.html"
+                >Impressum</a
+              >
+            </li>
+            <li class="footer_item">
+              <a class="footer_link" href="#">Datenschutz</a>
+            </li>
+            <li class="footer_item">
+              <a class="footer_link" href="/_contact/index.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
 
-    <ul class="footer_ul">
-      <li class="footer_box_text2">
-        <p>Komm uns besuchen! <br>Frauenhoferstr. 13, Kiel</p>
-      </li>
-      <li class="footer_box_opened">
-        <p>Mo - Fr 8-18 Uhr <br>Sa 11-18 Uhr</p>
-      </li>
-      <li class="footer_box_text3">
-        <ul class="footer_list">
-          <li><a class="footer_link" href="/_cafe/index.html">Café</a></li>
-          <li><a class="footer_link" href="#">Shop</a></li>
-          <li><a class="footer_link" href="/_herkunft/index.html">Herkunft</a></li>
-        </ul>
-      </li>
-      <li class="footer_box_text4">
-        <ul class="footer_list">
-          <li class="footer_item"><a class="footer_link" href="/_impressum/index.html">Impressum</a></li>
-          <li class="footer_item"><a class="footer_link" href="#">Datenschutz</a></li>
-          <li class="footer_item"><a class="footer_link" href="/_contact/index.html">Kontakt</a></li>
-        </ul>
-      </li>
-    </ul>
-
-
-  </footer>
-
-  <script src="../js/index.js"></script>
-</body>
-
+    <script src="../js/index.js"></script>
+  </body>
 </html>
