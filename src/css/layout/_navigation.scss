@@ -1,265 +1,246 @@
 .navigation {
+  position: relative;
+
+  &_button {
+    width: 24px;
+    height: 13px;
+    position: fixed;
+    top: 21px;
+    right: 25px;
+    z-index: 2000;
+
+    cursor: pointer;
+
+    @include respond(media-large) {
+      opacity: 0;
+    }
+  }
+
+  &_background {
+    position: fixed;
+    z-index: 1000;
+    left: 100%;
+    transition: left 0.5s linear;
+    left: 0; // Mit Javascript umschalten
+  }
+
+  &_nav {
+    height: 100vh;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 251px;
+    margin-top: 1%;
+    position: fixed;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+    left: 100%;
+    transition: left 0.5s linear;
+    left: 0; // Mit Javascript umschalten
+
+    @include respond(media-large) {
+      opacity: 1;
+      width: 100%;
+      padding-left: 0px;
+      padding-top: 0px;
+      visibility: visible;
+      height: auto;
+    }
+  }
+
+  &_list {
+    list-style: none;
+
+    @include respond(media-large) {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5%;
+    }
+  }
+
+  &_item {
+    margin: 1rem;
+
+    @include respond(media-large) {
+      margin: 10px 35px;
+    }
+  }
+
+  &_link {
+    font-size: $font-size-h3-mobil;
+    font-weight: $font-weight-900;
+    color: $color-white;
+    text-decoration: none;
     position: relative;
-   
-    &_button {
-        width: 24px;
-        height: 13px;
-        position: absolute;
-        top: 21px;
-        right: 25px;
-        z-index: 2000;
-      
-    
-        cursor: pointer;
 
-        @include respond (media-large) {
-            opacity: 0;
-        }
+    @include respond(media-large) {
+      font-size: $font-size-bodytext;
     }
-    
-    
-    &_background {
-        position: fixed;
-        z-index: 1000;
-        left:100%;
-        transition: left 0.5s linear;
-        left: 0; // Mit Javascript umschalten
-    }
+  }
 
-    &_nav {
-        height: 100vh;
-        text-align: left;
-        padding-left: 60px;
-        padding-top: 251px;
-        position: fixed;
-        z-index: 1500;
-        opacity: 0; 
-        width: 0;
-        visibility: hidden;
-        left:100%;
-        transition: left 0.5s linear;
-        left: 0; // Mit Javascript umschalten
-      
-        @include respond (media-large) {
-           
-            opacity: 1;
-            width: 100%;
-            padding-left: 0px;
-            padding-top: 0px;
-            visibility: visible;
-            height: auto;
+  &_link::after {
+    display: inline-block;
+    content: "";
 
-        }
-       
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
 
-    }
-    
-    &_list {
-        list-style: none;
+    border-bottom: 1px solid;
+    transition: all 0.4s;
+  }
 
-        @include respond (media-large) {
-            
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 5%;
-    
-        }
+  &_link:hover::after {
+    width: 80%;
+  }
 
-    }
+  &_link:active {
+    border-bottom: 1px solid;
+  }
 
-    &_item {
-        margin: 1rem;
+  &_checkbox {
+    display: none;
+  }
 
-        @include respond (media-large) {
-            margin: 10px 35px;
-        }
+  &_checkbox:checked ~ &_background {
+    background-color: $color-black;
+    width: 100%;
+    height: 100vh;
+  }
 
+  &_checkbox:checked ~ &_nav {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &_checkbox:checked + &_button &_icon {
+    background-color: transparent;
+  }
+
+  &_checkbox:checked + &_button &_icon::before {
+    top: 0;
+    transform: rotate(45deg);
+    width: 2rem;
+  }
+
+  &_checkbox:checked + &_button &_icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 2rem;
+  }
+
+  &_icon {
+    position: relative;
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 3px;
+      background-color: $color-white;
+      display: inline-block;
     }
 
-    &_link {
-        font-size: $font-size-h3-mobil;
-        font-weight: $font-weight-900;
-        color: $color-white;
-        text-decoration: none;
-        position: relative;
-
-        @include respond (media-large) {
-            font-size: $font-size-bodytext;
-    
-        }
-
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
     }
 
-    &_link::after {
-        display: inline-block;
-        content: "";
-        
-        width: 0;
-        height: 100%;
-        position: absolute;
-            left: 0;
-
-        border-bottom: 1px solid ;
-        transition: all .4s;  
+    &::before {
+      top: -0.5rem;
+      left: 0;
     }
 
-    &_link:hover::after {
-        width: 80%;
+    &::after {
+      top: 0.5rem;
+      left: 0;
+      width: 1.5rem;
+    }
+  }
+
+  // Dunkles Navigationsmenü auf Impressum-Seite: //
+
+  &_checkbox:checked + &_button &_icon_dark {
+    background-color: transparent;
+  }
+
+  &_checkbox:checked + &_button &_icon_dark::before {
+    top: 0;
+    transform: rotate(45deg);
+    width: 2rem;
+    background-color: $color-white;
+  }
+
+  &_checkbox:checked + &_button &_icon_dark::after {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 2rem;
+    background-color: $color-white;
+  }
+
+  &_icon_dark {
+    position: relative;
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 3px;
+      background-color: $color-black;
+      display: inline-block;
     }
 
-    &_link:active {
-        border-bottom: 1px solid ;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
     }
 
-   
-    &_checkbox {
-        display: none;
+    &::before {
+      top: -0.5rem;
+      left: 0;
     }
 
-    &_checkbox:checked ~ &_background {
-        background-color: $color-black;
-        width: 100%;
-        height: 100vh;
+    &::after {
+      top: 0.5rem;
+      left: 0;
+      width: 1.5rem;
     }
+  }
 
-    &_checkbox:checked ~ &_nav {
-        width: 100%;
-        opacity: 1;
-        visibility: visible;
+  &_link_dark {
+    font-size: $font-size-h3-mobil;
+    font-weight: $font-weight-900;
+    color: $color-white;
+    text-decoration: none;
+    position: relative;
+
+    @include respond(media-large) {
+      font-size: $font-size-bodytext;
+      color: $color-black;
     }
+  }
 
-    &_checkbox:checked + &_button &_icon {
-        background-color: transparent;
-    }
+  &_link_dark::after {
+    display: inline-block;
+    content: "";
 
-    &_checkbox:checked + &_button &_icon::before {
-        top: 0;
-        transform: rotate(45deg);
-        width:2rem;
-    }
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
 
-    &_checkbox:checked + &_button &_icon::after {
-        top: 0;
-        transform: rotate(-45deg);
-        width: 2rem;
-    }
+    border-bottom: 1px solid;
+    transition: all 0.4s;
+  }
 
+  &_link_dark:hover::after {
+    width: 80%;
+  }
 
-
-    &_icon {
-        position: relative;
-        &,
-        &::before,
-        &::after {
-            width: 2rem;
-            height: 3px;
-            background-color: $color-white;
-            display: inline-block;
-        }
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-        }
-
-        &::before {
-            top: -.5rem; 
-            left: 0;
-        }
-        
-            &::after {
-            top: .5rem; 
-            left: 0;
-            width: 1.5rem;
-        }
-    }
-
-    #actice-link {
-        text-decoration: underline 1px solid;
-    }
-
-    // Dunkles Navigationsmenü auf Impressum-Seite: //
-
-    &_checkbox:checked + &_button &_icon_dark {
-        background-color: transparent;
-    }
-
-    &_checkbox:checked + &_button &_icon_dark::before {
-        top: 0;
-        transform: rotate(45deg);
-        width:2rem;
-        background-color: $color-white;
-    }
-
-    &_checkbox:checked + &_button &_icon_dark::after {
-        top: 0;
-        transform: rotate(-45deg);
-        width: 2rem;
-        background-color: $color-white;
-    }
-
-
-        &_icon_dark {
-            position: relative;
-            &,
-            &::before,
-            &::after {
-                width: 2rem;
-                height: 3px;
-                background-color: $color-black;
-                display: inline-block;
-            }
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-            }
-
-            &::before {
-                top: -.5rem; 
-                left: 0;
-            }
-            
-                &::after {
-                top: .5rem; 
-                left: 0;
-                width: 1.5rem;
-            }
-        }
-   
-    &_link_dark {
-        font-size: $font-size-h3-mobil;
-        font-weight: $font-weight-900;
-        color: $color-white;
-        text-decoration: none;
-        position: relative;
-    
-        @include respond (media-large) {
-            font-size: $font-size-bodytext;
-            color: $color-black;
-        }
-    }
-     
-    &_link_dark::after {
-        display: inline-block;
-        content: "";
-        
-        width: 0;
-        height: 100%;
-        position: absolute;
-            left: 0;
-
-        border-bottom: 1px solid ;
-        transition: all .4s;  
-    }
-
-    &_link_dark:hover::after {
-        width: 80%;
-    }
-
-    &_link_dark:active {
-        border-bottom: 1px solid ;
-    }  
+  &_link_dark:active {
+    border-bottom: 1px solid;
+  }
 }

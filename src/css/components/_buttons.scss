@@ -27,12 +27,12 @@
   text-decoration: none;
 
   &:hover {
-    background: $color-anthrazit;
-    transition: infinite 1s;
+    box-shadow: inset 16.3rem 0 0 0 $color-anthrazit;
+    transition: 0.2s;
   }
 
   &:active {
-    background-color: $color-kraftpapier;
+    box-shadow: inset 0 0 0 0 $color-kraftpapier;
   }
 
   &:focus {
@@ -86,11 +86,12 @@
   text-decoration: none;
 
   &:hover {
-    background-color: $color-anthrazit;
+    box-shadow: inset 16.3rem 0 0 0 $color-anthrazit;
+    transition: 0.2s;
   }
 
   &:active {
-    background-color: $color-kraftpapier;
+    box-shadow: inset 0 0 0 0 $color-kraftpapier;
   }
 
   &:focus {
@@ -138,11 +139,12 @@
   text-align: center;
 
   &:hover {
-    background-color: $color-anthrazit;
+    box-shadow: inset 16.3rem 0 0 0 $color-anthrazit;
+    transition: 0.2s;
   }
 
   &:active {
-    background-color: $color-kraftpapier;
+    box-shadow: inset 0 0 0 0 $color-kraftpapier;
   }
 
   &:focus {

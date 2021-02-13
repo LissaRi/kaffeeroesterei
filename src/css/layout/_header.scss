@@ -1,68 +1,61 @@
 .header_subpage_cafe {
-    display: flex;  
-    height: 400px;
-    background-image: 
-    url(/images/FEND-coffee-shop.jpg),
+  display: flex;
+  height: 400px;
+  background-image: url(/images/FEND-coffee-shop.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
-    @include respond (media-small) {
-     background-image: url(/images/FEND-coffee-shop_big.jpg),
-     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    }
+  @include respond(media-small) {
+    background-image: url(/images/FEND-coffee-shop_big.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
 }
 
 .header_Startseite {
-    display: flex;
-    height: 500px;
-    background-image:
-    url(../images/FEND-coffee-latte-art-3.jpg),
+  display: flex;
+  height: 500px;
+  background-image: url(../images/FEND-coffee-latte-art-3.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: $color-white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: $color-white;
 
-    @include respond(media-small) {
-      height: 450px;
-      background-image: url(/images/FEND-coffee-latte-art-3_big.jpg),
+  @include respond(media-small) {
+    height: 450px;
+    background-image: url(/images/FEND-coffee-latte-art-3_big.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    }
-    
+  }
 }
 
 .header_subpage_herkunft {
-  display: flex;  
+  display: flex;
   height: 400px;
-  background-image: 
-  url("/images/FEND-coffee-beans-hand-2.jpg"),
-  linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: url("/images/FEND-coffee-beans-hand-2.jpg"),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-size: cover;
   background-position: center;
   position: relative;
 
   @include respond(media-small) {
     background-image: url("/images/FEND-coffee-beans-hand-2_big.jpg"),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     height: 300px;
   }
-
 }
 
 .header_logo_box {
-    //position: absolute;
-    padding-top: 10px;
-    padding-left: 24px;
-  }
+  padding-top: 10px;
+  padding-left: 24px;
+}
 
 .header_logo {
-    width: 35px;
-    height: 35px;
-  }
+  width: 35px;
+  height: 35px;
+}
 
-  
 .box_h2 {
   text-align: center;
 }
@@ -75,20 +68,17 @@
   text-align: center;
   width: 100%;
 
-/*  @include respond(media-small) {                   Fehlermeldung: undefined mixin. Ist aber auf jeden Fall definiert, ich benutze das ja auch anderswo...
+  /*  @include respond(media-small) {                   Fehlermeldung: undefined mixin. Ist aber auf jeden Fall definiert, ich benutze das ja auch anderswo...
       top: 50%;
   } */
-  
 }
-
 
 .h1_m {
   color: $color-white;
-
 }
 
 .Subhead_m {
   font-size: $font-size-subhead-mobil;
   font-weight: $font-weight-400;
   color: $color-white;
-  }
+}
