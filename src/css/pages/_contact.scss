@@ -26,13 +26,14 @@
 }
 
 .contact_group {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: block;
 }
 
 .form-input {
   font-size: $font-size-bodytext-mobil;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+
   border: none;
   border-bottom: 3px solid $color-black;
   width: 80%;
@@ -41,10 +42,10 @@
     outline: none;
     background-color: $color-light-grey;
 
-    &:focus:invalid {
-      background-color: rgba($color: red, $alpha: 0.3);
-      color: red;
-    }
+    // &:focus:invalid {
+    //   background-color: rgba($color: red, $alpha: 0.3);
+    //   color: red;
+    // }
 
     &::-webkit-input-placeholder {
       color: $color-light-grey;
@@ -99,12 +100,6 @@
   content: "";
 }
 
-// .privacy-checkbox:focus + label::before {
-//     outline: none;
-//     border: 3px solid;
-//     border-color: $color-kraftpapier;
-// }
-
 .checkbox-input {
   opacity: 0;
 }
@@ -135,11 +130,4 @@
   @include respond(media-small) {
     margin-left: 80%;
   }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0 5em;
 }
