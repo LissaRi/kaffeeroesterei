@@ -1,13 +1,5 @@
-// // import myFunction, { multiply } from "./myModule";
+import navigation from "./navigation";
 
-// // myFunction();
+navigation();
 
-// // const result = multiply(2, 5);
-
-// // console.log(result);
-
-// // console.log('funktioniert das hier überhaupt?')
-
-// document.getElementById("btn_contact_mobil").onclick = function () {
-//     console.log('Der Hase läuft');
-// // 
+import shop from "./shop";

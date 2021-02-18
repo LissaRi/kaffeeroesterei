@@ -20,7 +20,7 @@
     position: fixed;
     z-index: 1000;
     left: 100%;
-    transition: left 0.5s linear;
+    // transition: left 0.5s linear;
     left: 0; // Mit Javascript umschalten
   }
 
@@ -36,7 +36,7 @@
     width: 0;
     visibility: hidden;
     left: 100%;
-    transition: left 0.5s linear;
+    // transition: left 0.5s linear;
     left: 0; // Mit Javascript umschalten
 
     @include respond(media-large) {
@@ -243,4 +243,11 @@
   &_link_dark:active {
     border-bottom: 1px solid;
   }
+}
+
+// Javascript
+
+.switch {
+  transition: left 2s linear;
+  left: 1;
 }

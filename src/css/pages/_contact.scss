@@ -42,13 +42,13 @@
     outline: none;
     background-color: $color-light-grey;
 
-    // &:focus:invalid {
-    //   background-color: rgba($color: red, $alpha: 0.3);
-    //   color: red;
-    // }
-
     &::-webkit-input-placeholder {
       color: $color-light-grey;
+    }
+
+    &:invalid {
+      background-color: rgba($color: red, $alpha: 0.3);
+      color: red;
     }
   }
 }
