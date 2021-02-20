@@ -1,3 +1,11 @@
+// Javascript
+
+// .switch {
+//   transform: translateX(-50%);
+// }
+
+//normales Design
+
 .navigation {
   position: relative;
 
@@ -20,8 +28,8 @@
     position: fixed;
     z-index: 1000;
     left: 100%;
-    // transition: left 0.5s linear;
-    left: 0; // Mit Javascript umschalten
+    transition: left 0.5s linear;
+    // left: 0; // Mit Javascript umschalten
   }
 
   &_nav {
@@ -31,13 +39,12 @@
     padding-top: 251px;
     margin-top: 1%;
     position: fixed;
-    z-index: 1500;
     opacity: 0;
+    z-index: 1500;
     width: 0;
-    visibility: hidden;
     left: 100%;
-    // transition: left 0.5s linear;
-    left: 0; // Mit Javascript umschalten
+    transition: left 0.5s linear;
+    // left: 0; // Mit Javascript umschalten
 
     @include respond(media-large) {
       opacity: 1;
@@ -243,11 +250,4 @@
   &_link_dark:active {
     border-bottom: 1px solid;
   }
-}
-
-// Javascript
-
-.switch {
-  transition: left 2s linear;
-  left: 1;
 }
