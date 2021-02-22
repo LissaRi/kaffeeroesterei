@@ -15,7 +15,7 @@ function shop () {
     const productContainer = document.querySelector('.shop-container');
     const typeTemplates = `
     ${products.map((product) => `
-    <div class="box_shop">
+    <div class="wrapper_shop">
         <div class="shop_coffee_variety">
             <div class="shop_coffee_variety_img"></div>
             <div class="type_name">${product.productName}</div>
