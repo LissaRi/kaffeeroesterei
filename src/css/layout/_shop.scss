@@ -14,10 +14,26 @@
   justify-content: center;
 }
 
+.container_pack {
+  background-color: $color-light-grey;
+}
+.img_pack {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 .type_name {
   font-size: $font-size-subhead-mobil;
   font-weight: $font-weight-400;
   color: $color-black;
+  list-style-type: none;
+}
+
+.price {
+  font-size: $font-size-bodytext-mobil;
+  font-weight: $font-weight-400;
+  color: $color-medium-grey;
   list-style-type: none;
 }
 

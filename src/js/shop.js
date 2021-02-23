@@ -1,4 +1,6 @@
 import products from "./products.json";
+import productImages from "../images/*.png";
+
 
 let cart =[];
 
@@ -17,10 +19,10 @@ function shop () {
     ${products.map((product) => `
     <div class="wrapper_shop">
         <div class="shop_coffee_variety">
-            <div class="shop_coffee_variety_img"></div>
+            <div class="container_pack"><img class="img_pack" src="${productImages[product.image]}" alt="Eine Packung Rustica-Kaffee"/></div>
             <div class="type_name">${product.productName}</div>
-            <div class="shop_coffee_variety_price">${product.price / 100 + "0"}€</div>
-            <div class="shop_coffee_variety_icons"></div>
+            <div class="price">${product.price / 100 + "0"}€</div>
+            <div class="shop_coffee_variety_icons"><img class="icons" src="${productImages[product.icon1]}"/></div>
             <div class="description">${product.description}</div>
             <button class="cart_button" data-product-id="${product.id}">In den Warenkorb</button>
         </div>
@@ -42,6 +44,16 @@ function shop () {
 
 export default shop;
 
+// function initShop() {
+//     const productTemplates = products.map(fillTemplate).join("");
+//     const shop = document.querySelector(".shop");
+//     shop.innerHTML = productTemplates;
+//   }
+  
+//   export default initShop;
+  
+//   im deinem Javascript-File dann einfach
+//   initShop()
 
 
 // <div class="wrapper_type">
@@ -51,3 +63,4 @@ export default shop;
 // <div class="icons"></div>
 // <div class="description">${product.description}</div>
 // </div>
+
