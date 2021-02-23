@@ -16,6 +16,7 @@
 
 .container_pack {
   background-color: $color-light-grey;
+  margin-bottom: 5%;
 }
 .img_pack {
   height: 100%;
@@ -35,6 +36,20 @@
   font-weight: $font-weight-400;
   color: $color-medium-grey;
   list-style-type: none;
+}
+
+.container_icons {
+  display: flex;
+  margin-bottom: 20%;
+}
+
+.icons {
+  width: 12%;
+  height: 14%;
+}
+
+#icon_middle {
+  margin: 0 10%;
 }
 
 .cart_button {

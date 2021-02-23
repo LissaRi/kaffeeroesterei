@@ -20,11 +20,10 @@ function shop () {
     <div class="wrapper_shop">
         <div class="shop_coffee_variety">
             <div class="container_pack"><img class="img_pack" src="${productImages[product.image]}" alt="Eine Packung Rustica-Kaffee"/></div>
-            <div class="type_name">${product.productName}</div>
-            <div class="price">${product.price / 100 + "0"}€</div>
-            <div class="shop_coffee_variety_icons"><img class="icons" src="${productImages[product.icon1]}"/></div>
-            <div class="description">${product.description}</div>
-            <button class="cart_button" data-product-id="${product.id}">In den Warenkorb</button>
+            <div class="type_name"><p>${product.productName}</p></div>
+            <div class="price"><p>${product.price / 100 + "0"}€</p></div>
+            <div class="container_icons"><img class="icons" src="${productImages[product.icon1]}"/><img class="icons" id="icon_middle" src="${productImages[product.icon2]}"/><img class="icons" src="${productImages[product.icon3]}"/></div>
+          
         </div>
     </div>
     `
@@ -64,3 +63,4 @@ export default shop;
 // <div class="description">${product.description}</div>
 // </div>
 
+  // <div class="description">${product.description}</div>
