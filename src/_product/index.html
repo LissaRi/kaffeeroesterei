@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Shop</title>
+    <title>Produkt</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
@@ -68,34 +68,10 @@
       </div>
     </div>
 
-    <main>
-      <h2 class="shop-h2">
-        Entdecke unsere <br />
-        Kaffeesorten
-      </h2>
-      <div class="shop-container"></div>
-    </main>
-
-    <section class="section_map">
-      <div class="map">
-        <h2>Komm vorbei</h2>
-
-        <iframe
-          class="gmaps_adresse"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8558807169125!2d10.11983211577044!3d54.
-                        3418553801997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f0741
-                        62a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1610698923366!5m2!1sde!2sde"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-          alt="Kartenansicht von Googlemaps auf den Standort von Rustica, Frauenhoferstr. 13, Kiel"
-        ></iframe>
-      </div>
-    </section>
+    <include
+      src="shop-section-main.html"
+      locals='{"path": "html-templates"}'
+    ></include>
 
     <footer>
       <include
