@@ -1,20 +1,18 @@
 
-function toggleMenu(navigation_list) {
-const menuOpen = nav.classList.contains('.switch');
-menuOpen.classList.toggle('.switch')
-}
-
-
+const button = document.querySelector('.navigation_button');
+const closeButton = document.querySelector('.navigation_close_button');
+const nav = document.querySelector('.navigation_nav');
 
 function navigation() {
-    const button = document.querySelector('.navigation_button');
-    const nav = document.querySelector('.navigation_nav');
-    const background = document.querySelector('.navigation_background');
-
-    button.addEventListener('click', () => toggleMenu(navigation_list))
+    console.log("nav");
+    button.addEventListener('click', () => {
+        nav.classList.add("open");
+        document.body.classList.add("noscroll");
+    });
+    closeButton.addEventListener('click', () => {
+        nav.classList.remove("open");
+        document.body.classList.remove("noscroll");
+    });
 }
-
-
-// background && nav.classList.add('.switch'))
 
 export default navigation;

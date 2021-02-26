@@ -16,6 +16,12 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+
+  &.noscroll {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+  }
 }
 
 h1 {

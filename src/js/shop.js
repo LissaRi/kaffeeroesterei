@@ -1,7 +1,6 @@
 import products from "./products.json";
 import productImages from "../images/*.png";
 
-
 let cart =[];
 
 function handleButtonClick(event) {
@@ -20,7 +19,7 @@ function shop () {
     <div class="wrapper_shop">
         <div class="shop_coffee_variety">
             <div class="container_pack"><img class="img_pack" src="${productImages[product.image]}" alt="Eine Packung Rustica-Kaffee" /></div>
-            <div class="type_name"><a href="../_product/index.html">${product.productName}</a></div>
+            <div class="type_name"><a href="/_product/index.html?product=${product.id}">${product.productName}</a></div>
             <div class="price"><p>${product.price / 100 + "0"}€</p></div>
             <div class="container_icons"><img class="icons" src="${productImages[product.icon1]}"/><img class="icons" id="icon_middle" src="${productImages[product.icon2]}"/><img class="icons" src="${productImages[product.icon3]}"/></div>
           

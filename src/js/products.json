@@ -8,7 +8,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
     },
     {
       "id": 1,
@@ -19,7 +19,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       },
     {
       "id": 4,
@@ -52,7 +52,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       },
     {
       "id": 5,
@@ -63,7 +63,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       },
     {
       "id": 6,
@@ -74,7 +74,7 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       },
     {
       "id": 7,
@@ -85,6 +85,6 @@
       "image": "coffee_bag_png",
       "icon1": "icon_coffee_beans_png",
       "icon2": "icon_french_press_png",
-      "icon3": "icon_shovel_png",
+      "icon3": "icon_shovel_png"
       } 
   ]
