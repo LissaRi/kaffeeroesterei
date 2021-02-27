@@ -2,7 +2,7 @@
 // import productImages from "../images/*.png";
 
 // function single_Product() {
-//   const contentContainer = document.querySelector('div.shop_coffee_variety');
+//   const contentContainer = document.querySelector('.wrapper');
 //   const contentTemplates = `
 //   ${products.forEach((product) => `
 //   <div class="container_pack_">
