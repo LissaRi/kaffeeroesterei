@@ -6,7 +6,7 @@
 //   const contentTemplates = `
 //   ${products.forEach((product) => `
 //   <div class="container_pack_">
-//   <img class="img_pack" src="${productImages[product.image]}" alt="Eine Packung Rustica-Kaffee"/>
+//   <img class="wrapper_img_pack" src="${productImages[product.image]}" alt="Eine Packung Rustica-Kaffee"/>
 // </div>
 // <div class="type_name_detailpage"><p>${product.productName}</p></div>
 // <div class="price_detailpage"><p>${product.price / 100 + "0"}€</p></div>
@@ -21,7 +21,7 @@
 //   </select>
 // </div>
 // <div><p>Beschreibung</p></div>
-// <div class="description">${product.description}</div>
+// <div class="description_long">${product.description}</div>
 // ` 
 // )
 // .join("")}

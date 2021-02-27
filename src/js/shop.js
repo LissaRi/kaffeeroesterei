@@ -4,7 +4,7 @@ import productImages from "../images/*.png";
 let cart =[];
 
 function handleButtonClick(event) {
-    const {productId} = this.dataset;
+    const {productId} = this.dataset; //vielleicht product.id?
     //console.log(productID) irgendwas läuft hier schon nicht, weil die productId nicht definiert ist. Wieso nicht??
     const chosenProduct = product.find((product) => product.id === productId);
 
