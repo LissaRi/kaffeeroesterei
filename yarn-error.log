@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/alissa/Projekte/kaffeeroesterei/package.json: Unexpected token / in JSON at position 849
+  SyntaxError: /home/alissa/Projekte/kaffeeroesterei/package.json: Unexpected token / in JSON at position 873
       at JSON.parse (<anonymous>)
       at /usr/share/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -28,7 +28,7 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "start": "parcel src/index.html",
+      "start": "parcel src/index.html src/_product/index.html",
       "build": "parcel build src/index.html",
       "lint": "eslint src/js"
     },
@@ -53,7 +53,7 @@ npm manifest:
       "sass": "^1.32.0"
     }
   }
-  // src/_product/index.html
+  //
 
 yarn manifest: 
   No manifest
