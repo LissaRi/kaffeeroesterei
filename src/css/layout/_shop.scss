@@ -40,7 +40,7 @@
 
 .container_icons {
   display: flex;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .icons {
@@ -52,21 +52,21 @@
   margin: 0 10%;
 }
 
-.cart_button {
+.add_to_cart_button {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  padding: 15px 15px;
+  padding: 7px 5px;
   justify-content: center;
-  margin-top: 37%;
-  margin-left: 50%;
-  margin-bottom: 5%;
+
+  margin-left: 72%;
+  margin-bottom: 25%;
 
   transform: translate(-50%, -38.5%);
   text-align: center;
 
-  width: 163px;
-  height: 48px;
+  width: 140px;
+  height: 30px;
 
   background: $color-black;
   color: $color-black;
