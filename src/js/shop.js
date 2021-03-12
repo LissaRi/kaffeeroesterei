@@ -19,7 +19,6 @@ function handleButtonClick() {
     }
 }
 
-
 function shop () {
     const productContainer = document.querySelector('.shop-container');
     const typeTemplates = `
