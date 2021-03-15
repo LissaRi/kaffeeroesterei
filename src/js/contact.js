@@ -1,5 +1,5 @@
 "use strict";
-// import { validateEmail, validateNotEmpty } from "./form";
+import { validateEmail, validateNotEmpty } from "./form";
 
 const email = document.getElementById("email");
 const nameField = document.getElementById("name");
@@ -8,23 +8,23 @@ const checkboxInput = document.getElementById("privacy");
 
 // ---------------------------------------------------------------------------------------------------------------------
 function validate() {
-  // let status = {
-  //   error: false,
-  //   errorMessages: [],
-  // };
-  // const errorElement = document.querySelector(`#${this.id}-error`);
-  // if (this.id === "email") {
-  //   status = [...status, validateEmail(this.value)];
-  //   status = [...status, validateNotEmpty(this.value)];
-  // }
-  // console.log(status);
-  // if (status.error) {
-  //   this.classList.add("invalid");
-  //   errorElement.innerHTML = status.errorMsg;
-  // } else {
-  //   this.classList.remove("invalid");
-  //   errorElement.innerHTML = "";
-  // }
+  let status = {
+    error: false,
+    errorMessages: [],
+  };
+  const errorElement = document.querySelector(`#${this.id}-error`);
+  if (this.id === "email") {
+    status = [...status, validateEmail(this.value)];
+    status = [...status, validateNotEmpty(this.value)];
+  }
+  console.log(status);
+  if (status.error) {
+    this.classList.add("invalid");
+    errorElement.innerHTML = status.errorMsg;
+  } else {
+    this.classList.remove("invalid");
+    errorElement.innerHTML = "";
+  }
 }
 
 email.addEventListener("keyup", validate);
@@ -32,22 +32,24 @@ email.addEventListener("keyup", validate);
 // ---------------------------------------------------------------------------------------------------------------------
 
 //Email
-export function validateEmail(value) {
-  if (!value.includes("@")) {
-    return "Eine Email muss ein @ Zeichen haben und mit .com enden";
-  } else {
-    return null;
-  }
-}
 
-const emailWarning = document.getElementById("email-error");
-const test = function () {
-  return `
-      <p>Eine Emailadresse muss ein @ Zeichen, sowie einen . beinhalten!</p>
-    `;
-};
+// const emailWarning = document.getElementById("email-error");
+// export function validateEmail() {
+//   if (!this.includes("@")) {
+//     return "Eine Email muss ein @ Zeichen haben und mit .com enden";
+//   } else {
+//     return null;
+//   }
+// }
 
-emailWarning.innerHTML = test();
+//
+// const test = function () {
+//   return `
+//       <p>Eine Emailadresse muss ein @ Zeichen, sowie einen . beinhalten!</p>
+//     `;
+// };
+
+// emailWarning.innerHTML = test();
 
 //Checkt den Namen
 //Checkt die Telefonnummer
@@ -73,6 +75,7 @@ document
       alert(
         "Du musst deinen Namen, eine Email-Adresse und eine Telefonnummer eintragen. Diese Felder dürfen nicht leer bleiben!"
       );
+      emailWarning.addEventListener("keyup", validateEmail);
     }
 
     console.log("Es wurde geklickt");
