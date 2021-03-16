@@ -16,7 +16,7 @@ const currentProduct = products.find(
 );
 
 const productDetailContent = `
-  <div class="container_pack_">
+  <div class="container_pack_detail">
   <img class="wrapper_img_pack" src="${
     productImages[currentProduct.image]
   }" alt="Eine Packung Rustica-Kaffee"/>

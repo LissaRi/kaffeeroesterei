@@ -3,6 +3,19 @@
   margin: 100px 100px 0px;
 }
 
+.container_pack_detail{
+  background-color: $color-kraftpapier;
+}
+
+.wrapper_img_pack {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+//---------------------------------------- loading spinner -------------------
+
 .lds-heart {
   display: inline-block;
 
