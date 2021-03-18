@@ -39,8 +39,9 @@ const productDetailContent = `
     <option value="just_for_fun">einfach nur so!</option>
   </select>
 </div>
+
 <div><img class="icons_detailpage" src=${
-  productSvgs[currentProduct.icon1]
+  productSvgs[currentProduct.icon1Detail]
 }</div>
 <div><img class="icons_detailpage" src=${
   productSvgs[currentProduct.icon2]
@@ -49,7 +50,9 @@ const productDetailContent = `
   productSvgs[currentProduct.icon3]
 }</div>
 <div><p>Beschreibung</p></div>
-<div class="description_long">${currentProduct.description}</div>
+<div class="description_long"><p>${
+  currentProduct.description
+}</p></div>
 `;
 
 function singleProduct() {

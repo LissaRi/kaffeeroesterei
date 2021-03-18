@@ -1,10 +1,11 @@
 .wrapper {
-  height: 50vh;
-  margin: 100px 100px 0px;
+  margin: 100px 24px;
 }
 
 .container_pack_detail{
   background-color: $color-kraftpapier;
+  width: auto;
+  height: 50vh;
 }
 
 .wrapper_img_pack {
@@ -13,7 +14,29 @@
   object-fit: contain;
 }
 
+.type_name_detailpage {
+  font-size: $font-size-subhead-mobil;
+  font-weight: $font-weight-400;
+  color: $color-black;
+  list-style-type: none;
+}
 
+.price_detailpage {
+  font-size: $font-size-bodytext-mobil;
+  font-weight: $font-weight-400;
+  color: $color-medium-grey;
+  list-style-type: none;
+}
+
+.description_short {
+  font-size: $font-size-bodytext-mobil;
+  font-weight: $font-weight-400;
+}
+
+.description_long {
+  font-size: $font-size-bodytext-mobil;
+  font-weight: $font-weight-400;
+}
 //---------------------------------------- loading spinner -------------------
 
 .lds-heart {
