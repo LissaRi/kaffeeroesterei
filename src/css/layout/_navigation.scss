@@ -16,6 +16,7 @@
     top: 21px;
     right: 25px;
     z-index: 2000;
+    margin-right: 50px;
 
     cursor: pointer;
 
@@ -260,4 +261,11 @@
   &_link_dark:active {
     border-bottom: 1px solid;
   }
+}
+
+.shopping-cart-icon {
+  position: absolute;
+  z-index: 4000;
+  margin-left: 95%;
+  margin-top: 1.2em;
 }
