@@ -69,8 +69,8 @@ export default shop;
 // der Warenkorb soll öffnen und schließen. noch funzt das nicht. mit if??
 const openCart = document.getElementById("shopping-cart-icon");
 openCart.addEventListener("click", function (event) {
-  if (true) {
-    openCart.innerHTML = `
+  if (event) {
+    document.getElementById("shopping-cart").innerHTML = `
     <div class="wrapper_cart">
       <div><h1>Warenkorb</h1><p>1 Produkt</p></div>
       <div class="product_quantity"><p>1 Produkt wurde erfolgreich dem Warenkorb hinzugefügt</p></div>
@@ -92,7 +92,7 @@ openCart.addEventListener("click", function (event) {
           </tr>
         </table>
       </div>
-      
+
     </div>
 `;
     //   const cartClose = document.createElement("button");

@@ -107,6 +107,13 @@
   }
 }
 
+#shopping-cart {
+  position: fixed;
+  z-index: 4000;
+  margin-left: 95%;
+  margin-top: 1.2em;
+}
+
 .wrapper_cart {
   width: 100%;
   margin-left: -100%;
